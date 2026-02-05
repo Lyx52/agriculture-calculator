@@ -1,4 +1,4 @@
-FROM php:8.3.22-fpm-bullseye
+FROM php:8.4.11-fpm-bullseye
 
 ARG COMPOSER_VERSION=2.8.6
 ENV NODE_VERSION=20.20.0

@@ -22,7 +22,7 @@ return new class extends Migration
         });
 
         Schema::table('farmlands', function (Blueprint $table) {
-            $table->foreignIdFor(FarmCrop::class, 'crop_id')->constrained()->nullOnDelete();
+            $table->foreignIdFor(FarmCrop::class, 'crop_id')->nullable();
         });
     }
 
