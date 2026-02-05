@@ -1,0 +1,52 @@
+services:
+  app:
+    container_name: app
+    image: app-local:latest
+    networks:
+      - app-network
+    build:
+      context: .
+      dockerfile: ./local.Dockerfile
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - db
+    ports:
+      - 8000:8000
+      - 5173:5173
+
+    volumes:
+      - ./project:/srv/www
+  db:
+    image: mariadb
+    container_name: db
+    networks:
+      - app-network
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      TZ: "Europe/Riga"
+    volumes:
+      - ./docker/db/data:/var/lib/mysql
+
+  mailhog:
+    image: mailhog/mailhog
+    container_name: mailhog
+    networks:
+      - app-network
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    volumes:
+      - mailhog-data:/data
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  app-data:
+    external: true
+  mailhog-data:

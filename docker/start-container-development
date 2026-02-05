@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# Wait for database connection
+composer install
+
+#Install Node packages
+yarn install --immutable
+
+# Adjust storage rights
+chown -R www-data:www-data /srv/www/storage
+
+chmod -R 777 /srv/www/storage
+
+echo "Run migrations"
+# Perform migrations
+php artisan migrate --force
+
+echo "Clean permission cache"
+php artisan permission:cache-reset
+
+echo "Storage link"
+
+# Link storage for course rendering
+php artisan storage:link
+
+php artisan optimize:clear
+
+php artisan filament:optimize-clear
+
+php artisan optimize
+
+php artisan filament:optimize
+
+php artisan filament:assets
+
+yarn install
+
+yarn build
+
+npx concurrently -c "#93c5fd,#c4b5fd,#fb7185,#fdba74,#fd93dd" -n server,queue,logs,vite \
+"php artisan serve --host=0.0.0.0 --port=8000" \
+"php artisan queue:listen --queue=default,emails,exports --tries=1" \
+"php artisan pail --timeout=0" \
+"yarn dev --host 0.0.0.0 --port 5173"
+
+
+# Start cron
+# /etc/init.d/cron start
+
+# /usr/bin/supervisord

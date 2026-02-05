@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# Copy repository files
+cp -u -a /srv/www/repo_storage/. /srv/www/storage/
+
+# Adjust storage rights
+chown -R www-data:www-data /srv/www/storage
+
+chmod -R 777 /srv/www/storage
+
+echo "Run migrations"
+# Perform migrations
+php artisan migrate --force
+
+echo "Clean permission cache"
+php artisan permission:cache-reset
+
+echo "Storage link"
+
+# Link storage for course rendering
+php artisan storage:link
+
+php artisan optimize:clear
+
+php artisan filament:optimize-clear
+
+php artisan optimize
+
+php artisan filament:optimize
+
+php artisan filament:assets
+
+# Start cron
+/etc/init.d/cron start
+
+/usr/bin/supervisord
