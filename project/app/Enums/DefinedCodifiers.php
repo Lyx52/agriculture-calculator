@@ -2,20 +2,19 @@
 namespace App\Enums;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Contracts\Support\Htmlable;
+use function Laravel\Prompts\select;
 
 enum DefinedCodifiers: string implements HasLabel {
-    case CROP_TYPES = 'crop_types';
+    case CROP_SPECIES = 'crop_species';
     case OPERATION_TYPES = 'operation_types';
-    case COST_TYPES = 'cost_types';
-    case EMPLOYEE_TYPES = 'employee_types';
+    case CROP_PROTECTION_USAGE = 'crop_protection_usage';
 
     public function getLabel(): string|Htmlable|null
     {
         return match ($this) {
-            self::CROP_TYPES => 'Kūltūras veidi',
+            self::CROP_SPECIES => 'Kūltūrauga suga',
             self::OPERATION_TYPES => 'Apstrādes operāciju veidi',
-            self::COST_TYPES => 'Izmaksu veidi',
-            self::EMPLOYEE_TYPES => 'Darbinieka veids'
+            self::CROP_PROTECTION_USAGE => 'Augu aizsardzības līdzekļa lietošanas kategorija',
         };
     }
 }

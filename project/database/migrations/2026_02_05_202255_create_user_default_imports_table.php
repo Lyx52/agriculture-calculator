@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('farms', function (Blueprint $table) {
+        Schema::create('user_default_imports', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class, 'owner_id')->constrained()->cascadeOnDelete();
-            $table->string('name');
-            $table->softDeletes();
-            $table->timestamps();
+            $table->json('imports');
+            $table->string('model_type');
+            $table->string('import_type');
         });
     }
 
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('farms');
+        Schema::dropIfExists('user_default_imports');
     }
 };

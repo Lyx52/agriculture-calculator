@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Filament\Resources\User\FarmEmployees\Tables;
+namespace App\Filament\Resources\User\FarmCrops\Tables;
 
 use App\Enums\DefinedCodifiers;
-use App\Enums\EmployeeType;
 use App\Models\Codifier;
+use App\Models\FarmCrop;
 use App\Models\FarmEmployee;
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
@@ -15,26 +15,26 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
 
-class FarmEmployeesTable
+class FarmCropsTable
 {
     public static function configure(Table $table): Table
     {
         return $table
-            ->query(user()->employees()->getQuery())
+            ->query(user()->crops()->getQuery())
             ->columns([
-                TextColumn::make('fullName')->searchable()->sortable()->label('Vārds, Uzvārds / Nosaukums'),
-                TextColumn::make('employee_type')->formatStateUsing(fn(EmployeeType $state) => $state->getLabel())->label('Darbinieka tips'),
-                TextColumn::make('salary')->sortable()->formatStateUsing(fn(FarmEmployee $record) => $record->salaryText)->label('Alga / Izmaksas'),
+                TextColumn::make('name')->searchable()->sortable()->label('Šķirnes nosaukums'),
+                TextColumn::make('species.name')->searchable()->sortable()->label('Sugas nosaukums'),
+                TextColumn::make('costs')->sortable()->formatStateUsing(fn(FarmCrop $record) => $record->costsText)->label('Izmaksas'),
             ])
             ->filters([
                 TrashedFilter::make(),
-                SelectFilter::make('employee_type')
-                    ->label('Darbinieka veids')
-                    ->options(EmployeeType::class)
+                SelectFilter::make('crop_species_code')
+                    ->label('Suga')
+                    ->options(Codifier::whereParentCode(DefinedCodifiers::CROP_SPECIES)->pluck('name', 'code'))
                     ->searchable(),
             ])
             ->filtersApplyAction(fn(Action $action) => $action->label('Filtrēt'))
-            ->emptyStateHeading('Nav darbinieku')
+            ->emptyStateHeading('Nav kūltūraugu')
             ->paginated()
             ->recordActions([
                 EditAction::make()

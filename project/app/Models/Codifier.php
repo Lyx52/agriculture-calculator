@@ -12,13 +12,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Codifier extends Model
 {
     protected $guarded = ['id'];
-
-    protected function casts()
-    {
-        return [
-            'value' => 'json:unicode',
-        ];
-    }
+    protected $casts = [
+        'value' => 'json:unicode',
+    ];
 
     public function children(): HasMany {
         return $this->hasMany(Codifier::class, 'parent_id');

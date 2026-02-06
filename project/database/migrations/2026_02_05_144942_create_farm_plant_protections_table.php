@@ -14,7 +14,13 @@ return new class extends Migration
     {
         Schema::create('farm_plant_protections', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class, 'owner_id');
+            $table->foreignIdFor(User::class, 'owner_id')->constrained()->cascadeOnDelete();
+            $table->string("name")->nullable();
+            $table->json("protection_category_codes")->default("[]");
+            $table->text("description")->nullable();
+            $table->string("company")->nullable();
+            $table->double('costs')->default(0);
+            $table->string('cost_type');
             $table->timestamps();
             $table->softDeletes();
         });

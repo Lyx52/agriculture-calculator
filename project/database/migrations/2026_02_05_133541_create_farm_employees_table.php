@@ -14,12 +14,12 @@ return new class extends Migration
     {
         Schema::create('farm_employees', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class, 'owner_id');
+            $table->foreignIdFor(User::class, 'owner_id')->constrained()->cascadeOnDelete();
             $table->string('name');
-            $table->string('surname');
-            $table->string('employee_type_code');
+            $table->string('surname')->nullable();
+            $table->string('employee_type');
             $table->double('salary')->default(0);
-            $table->string('salary_cost_type_code');
+            $table->string('cost_type');
             $table->timestamps();
             $table->softDeletes();
         });

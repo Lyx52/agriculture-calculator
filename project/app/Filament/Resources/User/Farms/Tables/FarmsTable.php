@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\User\Farms\Tables;
 
 use App\Models\Farm;
+use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\RestoreAction;
@@ -16,6 +17,7 @@ class FarmsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->query(user()->farms()->getQuery())
             ->columns([
                 TextColumn::make('name')->searchable()->label('Saimniecības nosaukums'),
                 TextColumn::make('farmlandCount')
@@ -31,6 +33,7 @@ class FarmsTable
             ->filters([
                 TrashedFilter::make(),
             ])
+            ->filtersApplyAction(fn(Action $action) => $action->label('Filtrēt'))
             ->emptyStateHeading('Nav saimniecības')
             ->paginated()
             ->recordActions([

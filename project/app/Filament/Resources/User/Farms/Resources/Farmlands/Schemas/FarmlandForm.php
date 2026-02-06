@@ -16,9 +16,9 @@ class FarmlandForm
             ->columns(1)
             ->inlineLabel(false)
             ->components([
-                Select::make('seed_code')
+                Select::make('crop_id')
                     ->label('Kūltūraugs')
-                    ->options(Codifier::whereParentCode(DefinedCodifiers::CROP_TYPES)->pluck('name', 'code'))
+                    ->options(user()->crops()->get()->pluck('cropName', 'id'))
                     ->searchable(),
                 TextInput::make('name')
                     ->label('Nosaukums/Klasifikācija')

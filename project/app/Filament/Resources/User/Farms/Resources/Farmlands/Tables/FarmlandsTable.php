@@ -2,14 +2,18 @@
 
 namespace App\Filament\Resources\User\Farms\Resources\Farmlands\Tables;
 
+use App\Enums\DefinedCodifiers;
 use App\Filament\Resources\User\Farms\Resources\Farmlands\FarmlandResource;
+use App\Models\Codifier;
 use App\Models\Farmland;
 use Filament\Actions\Action;
+use Filament\Actions\CreateAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\RestoreAction;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
 
@@ -22,7 +26,7 @@ class FarmlandsTable
                 TextColumn::make('name')
                     ->label('Nosaukums')
                     ->searchable(),
-                TextColumn::make('seed.name')
+                TextColumn::make('crop.cropName')
                     ->label('Kūltūraugs')
                     ->searchable(),
                 TextColumn::make('area')
@@ -30,7 +34,14 @@ class FarmlandsTable
             ])
             ->filters([
                 TrashedFilter::make(),
+                SelectFilter::make('crop_id')
+                    ->label('Kūltūraugs')
+                    ->options(user()->crops()->get()->pluck('cropName', 'id'))
+                    ->searchable(),
             ])
+            ->filtersApplyAction(fn(Action $action) => $action->label('Filtrēt'))
+            ->emptyStateHeading('Nav saimniecības lauku')
+            ->paginated()
             ->recordActions([
                 Action::make('operations')
                     ->label('Apstrādes operācijas')
@@ -47,6 +58,9 @@ class FarmlandsTable
                     ->label('Dzēst'),
                 RestoreAction::make()
                     ->label('Atjaunot'),
+            ])
+            ->headerActions([
+                CreateAction::make()->label('Izveidot jaunu lauku')
             ]);
     }
 }

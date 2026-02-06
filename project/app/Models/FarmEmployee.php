@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Enums\CostType;
+use App\Enums\EmployeeType;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -12,16 +14,13 @@ class FarmEmployee extends Model
     use SoftDeletes;
     protected $guarded = ['id'];
 
-    public function employeeType(): BelongsTo {
-        return $this->belongsTo(Codifier::class, 'employee_type_code', 'code');
-    }
+    protected $casts = [
+        'cost_type' => CostType::class,
+        'employee_type' => EmployeeType::class,
+    ];
 
     public function owner(): BelongsTo {
         return $this->belongsTo(User::class, 'owner_id', 'id');
-    }
-
-    public function salaryCostType(): BelongsTo {
-        return $this->belongsTo(Codifier::class, 'salary_cost_type_code', 'code');
     }
 
     public function fullName(): Attribute {
@@ -29,6 +28,6 @@ class FarmEmployee extends Model
     }
 
     public function salaryText(): Attribute {
-        return new Attribute(fn() => "$this->salary {$this->salaryCostType->name}");
+        return new Attribute(fn() => "$this->salary {$this->cost_type->getLabel()}");
     }
 }
