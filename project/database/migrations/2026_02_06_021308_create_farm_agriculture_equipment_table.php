@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Farm;
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,13 +12,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('farmlands', function (Blueprint $table) {
+        Schema::create('farm_agriculture_equipment', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Farm::class, 'farm_id')->constrained()->cascadeOnDelete();
-            $table->string('name');
-            $table->double('area');
-            $table->string('agriculture_technology_code');
-            $table->softDeletes();
+            $table->foreignIdFor(User::class, 'owner_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -28,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('farmlands');
+        Schema::dropIfExists('farm_agriculture_equipment');
     }
 };

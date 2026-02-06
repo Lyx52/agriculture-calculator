@@ -16,18 +16,20 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 
 class FarmlandsTable
 {
     public static function configure(Table $table): Table
     {
         return $table
+            ->modifyQueryUsing(fn (Builder $query) => $query->with(['materials']))
             ->columns([
                 TextColumn::make('name')
                     ->label('Nosaukums')
                     ->searchable(),
-                TextColumn::make('crop.cropName')
-                    ->label('Kūltūraugs')
+                TextColumn::make('latestCropName')
+                    ->label('Pēdējais iesētais kūltūraugs')
                     ->searchable(),
                 TextColumn::make('area')
                     ->label('Zemes platība, ha'),

@@ -24,10 +24,6 @@ return new class extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
-
-        Schema::table('farmlands', function (Blueprint $table) {
-            $table->foreignIdFor(FarmCrop::class, 'crop_id')->nullable();
-        });
     }
 
     /**
@@ -35,10 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('farmlands', function (Blueprint $table) {
-            $table->dropColumn('crop_id');
-        });
-
         Schema::dropIfExists('farm_crops');
     }
 };

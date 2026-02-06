@@ -8,6 +8,7 @@ enum DefinedCodifiers: string implements HasLabel {
     case CROP_SPECIES = 'crop_species';
     case OPERATION_TYPES = 'operation_types';
     case CROP_PROTECTION_USAGE = 'crop_protection_usage';
+    case AGRICULTURE_TECHNOLOGY = 'agriculture_technology';
 
     public function getLabel(): string|Htmlable|null
     {
@@ -15,6 +16,7 @@ enum DefinedCodifiers: string implements HasLabel {
             self::CROP_SPECIES => 'Kūltūrauga suga',
             self::OPERATION_TYPES => 'Apstrādes operāciju veidi',
             self::CROP_PROTECTION_USAGE => 'Augu aizsardzības līdzekļa lietošanas kategorija',
+            self::AGRICULTURE_TECHNOLOGY => 'Lauksaimniecības tehnoloģija'
         };
     }
 }

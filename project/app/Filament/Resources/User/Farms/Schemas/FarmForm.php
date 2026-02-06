@@ -19,6 +19,9 @@ class FarmForm
                         TextInput::make('name')
                             ->label('Nosaukums')
                             ->required(),
+                        TextInput::make('name')
+                            ->label('Nosaukums')
+                            ->required(),
                         Hidden::make('owner_id')
                             ->default(auth()->id())
                     ])

@@ -29,11 +29,15 @@ class FarmPlantProtection extends Model
 
     public function categoriesText(): Attribute {
         return new Attribute(fn() =>
-        Codifier::query()->whereIn('code', $this->protection_category_codes)->pluck('name')->join(', ')
+            Codifier::query()->whereIn('code', $this->protection_category_codes)->pluck('name')->join(', ')
         );
     }
 
     public function costsText(): Attribute {
         return new Attribute(fn() => "$this->costs {$this->cost_type->getLabel()}");
+    }
+
+    public function productName(): Attribute {
+        return new Attribute(fn() => "$this->name ({$this->categoriesText})");
     }
 }

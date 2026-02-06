@@ -41,6 +41,26 @@ class CodifierSeeder extends Seeder
                         );
                     }
                 } break;
+                case DefinedCodifiers::OPERATION_TYPES: {
+                    $operations = (array)json_decode($disk->get('codifiers/operations.json'));
+
+                    foreach ($operations as $id => $label) {
+                        Codifier::firstOrCreate(
+                            ['code' => "operation_type_$id", 'parent_id' => $parent->id],
+                            ['code' => "operation_type_$id", 'parent_id' => $parent->id, 'name' => $label]
+                        );
+                    }
+                } break;
+                case DefinedCodifiers::AGRICULTURE_TECHNOLOGY: {
+                    $technologies = (array)json_decode($disk->get('codifiers/agriculture_technologies.json'));
+
+                    foreach ($technologies as $code => $label) {
+                        Codifier::firstOrCreate(
+                            ['code' => $code, 'parent_id' => $parent->id],
+                            ['code' => $code, 'parent_id' => $parent->id, 'name' => $label]
+                        );
+                    }
+                } break;
             }
         }
     }

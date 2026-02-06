@@ -20,6 +20,11 @@ class FarmlandForm
                     ->label('Kūltūraugs')
                     ->options(user()->crops()->get()->pluck('cropName', 'id'))
                     ->searchable(),
+                Select::make('agriculture_technology_code')
+                    ->required()
+                    ->label('Lauksaimniecības tehnoloģija')
+                    ->options(Codifier::whereParentCode(DefinedCodifiers::AGRICULTURE_TECHNOLOGY)->pluck('name', 'code'))
+                    ->searchable(),
                 TextInput::make('name')
                     ->label('Nosaukums/Klasifikācija')
                     ->required(),
