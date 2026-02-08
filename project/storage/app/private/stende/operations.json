@@ -1,0 +1,1596 @@
+[
+    {
+        "operation_date": "2023-09-12",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2023-09-12",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Glifomaks Plus š.k.",
+                "material_amount": 2.2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-03-05",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2024-03-05",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2024-03-05",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2024-03-05",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2024-04-11",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2024-04-11",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2024-04-11",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2024-04-11",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2024-04-30",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165"
+    },
+    {
+        "operation_date": "2024-05-01",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2024-05-01",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2024-05-01",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2024-05-01",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2024-05-01",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "Uffo",
+                "material_amount": 225,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-05-02",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Uffo",
+                "material_amount": 220,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-05-02",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Uffo",
+                "material_amount": 220,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-05-02",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Uffo",
+                "material_amount": 220,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-05-02",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Uffo",
+                "material_amount": 220,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-05-23",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2024-05-23",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2024-05-23",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2024-05-23",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2024-05-23",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2024-05-27",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2024-05-27",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2024-05-27",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2024-05-27",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2024-06-05",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Tombo WG",
+                "material_amount": 0.15,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Roundup Biactive SL",
+                "material_amount": 0.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-06-05",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Zypar",
+                "material_amount": 0.15,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-06-05",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Tombo WG",
+                "material_amount": 0.15,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Roundup Biactive SL",
+                "material_amount": 0.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-06-05",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Tombo WG",
+                "material_amount": 0.1,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Roundup Biactive SL",
+                "material_amount": 0.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-08-13",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2024-08-13",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2024-08-13",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2024-08-13",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2024-08-13",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2024-11-11",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2024-11-11",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2024-11-11",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2024-11-11",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2025-03-27",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2025-03-27",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2025-03-27",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2025-03-27",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2025-04-10",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-04-10",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-04-10",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-04-10",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-04-10",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2025-04-10",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2025-04-10",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2025-04-10",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 260,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 260,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 260,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 260,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 260,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 260,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 260,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-22",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-04-22",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-04-15",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Rodeo FL",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-15",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165"
+    },
+    {
+        "operation_date": "2025-04-29",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165"
+    },
+    {
+        "operation_date": "2025-05-12",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2025-05-12",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2025-05-12",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2025-05-12",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2025-05-12",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2025-05-12",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2025-05-21",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2025-05-21",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "150"
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Corum",
+                "material_amount": 0.625,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Corum",
+                "material_amount": 0.625,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Corum",
+                "material_amount": 0.625,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Corum",
+                "material_amount": 0.625,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Corum",
+                "material_amount": 0.625,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Corum",
+                "material_amount": 1.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "7.2",
+        "agriculture_technology_code": "Minimālā apstrāde",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Corum",
+                "material_amount": 1.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Karate Zeon 5 CS",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Carnadine Extra",
+                "material_amount": 0.25,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-27",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-12",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-12",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-12",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-12",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-12",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-12",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-12",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-08-12",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182"
+    },
+    {
+        "operation_date": "2025-09-01",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Rodeo FL",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-01",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Rodeo FL",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-12",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2025-09-12",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2025-09-12",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2025-09-12",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120"
+    },
+    {
+        "operation_date": "2025-09-10",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2025-09-10",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2025-09-10",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2025-09-10",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110"
+    },
+    {
+        "operation_date": "2025-09-22",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2025-09-22",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2025-09-22",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2025-09-22",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121"
+    },
+    {
+        "operation_date": "2025-09-23",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-09-23",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-09-23",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-09-23",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "131"
+    },
+    {
+        "operation_date": "2025-09-23",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2025-09-23",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2025-09-23",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2025-09-23",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160"
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "10.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "Celest Trio 060 FS",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-09-26",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "Brigens",
+                "material_amount": 212,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-10-21",
+        "farmland": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Boxer 800 EC",
+                "material_amount": 3,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Legacy 500 SC",
+                "material_amount": 0.2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-10-21",
+        "farmland": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Boxer 800 EC",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Legacy Pro",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-10-21",
+        "farmland": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Boxer 800 EC",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Legacy Pro",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-10-21",
+        "farmland": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Boxer 800 EC",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Legacy Pro",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-10-21",
+        "farmland": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Boxer 800 EC",
+                "material_amount": 3,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Legacy 500 SC",
+                "material_amount": 0.2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-10-21",
+        "farmland": "7.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Boxer 800 EC",
+                "material_amount": 3,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Legacy 500 SC",
+                "material_amount": 0.2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-10-21",
+        "farmland": "8.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Boxer 800 EC",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Legacy Pro",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-10-21",
+        "farmland": "9.2",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_materials": [
+            {
+                "name": "Boxer 800 EC",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Legacy Pro",
+                "material_amount": 0.15,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ]
+    }
+]

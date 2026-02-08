@@ -7,26 +7,19 @@ use App\Enums\MaterialAmountType;
 use App\Models\Codifier;
 use App\Models\FarmCrop;
 use App\Models\FarmEmployee;
-use App\Models\FarmlandOperation;
 use App\Models\FarmPlantProtection;
-use App\Models\User;
 use Filament\Forms\Components\DatePicker;
-use Filament\Forms\Components\DateTimePicker;
-use Filament\Forms\Components\Hidden;
-use Filament\Forms\Components\RelationshipRepeater;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Utilities\Get;
-use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
-use Illuminate\Support\Facades\Cache;
 
 class FarmlandOperationForm
 {
     public static function configure(Schema $schema): Schema
     {
-        $user = user();
+        $user = user()->load(['plantProtectionProducts', 'crops']);
         return $schema
             ->columns(1)
             ->inlineLabel(false)
@@ -43,7 +36,6 @@ class FarmlandOperationForm
                     ->label('Darbinieks')
                     ->options(FarmEmployee::all()->pluck('fullName', 'id'))
                     ->searchable(),
-                // Todo: Te vajadzetu padomat par perf optimizāciju
                 Repeater::make('materialInput')
                     ->label('Izmantotie materiāli')
                     ->relationship('materials')
@@ -63,11 +55,27 @@ class FarmlandOperationForm
                             ->required()
                             ->label(fn(Get $get) => match($get('material_type')) {
                                 FarmPlantProtection::class => 'Augu aizsardzības līdzeklis',
-                                default => 'Kūltūraugs',
+                                FarmCrop::class => 'Kūltūraugs',
                             })
-                            ->options(fn(Get $get) =>  match($get('material_type')) {
-                                FarmPlantProtection::class => $user->plantProtectionProducts->pluck('productName', 'id'),
-                                default => $user->crops->pluck('cropName', 'id'),
+                            ->searchable()
+                            ->getSearchResultsUsing(fn (string $search, Get $get) => match($get('material_type')) {
+                                FarmPlantProtection::class => $user->plantProtectionProducts()
+                                    ->limit(20)
+                                    ->when(!empty($search), fn($query) => $query->whereLike('name', "%$search%"))
+                                    ->pluck('name', 'id'),
+                                FarmCrop::class => $user->crops()
+                                    ->limit(20)
+                                    ->when(!empty($search), fn($query) => $query->whereLike('name', "%$search%"))
+                                    ->pluck('cropName', 'id'),
+                            })
+                            ->options(fn (Get $get) => match($get('material_type')) {
+                                FarmPlantProtection::class => $user->plantProtectionProducts->pluck('name', 'id'),
+                                FarmCrop::class => $user->crops->pluck('cropName', 'id'),
+                            })
+                            ->preload()
+                            ->getOptionLabelUsing(fn ($value, Get $get): ?string => match($get('material_type')) {
+                                FarmPlantProtection::class => FarmPlantProtection::find($value)?->productName,
+                                default => FarmCrop::find($value)?->cropName,
                             })
                             ->native(false),
                         TextInput::make('material_amount')
@@ -75,7 +83,7 @@ class FarmlandOperationForm
                             ->required()
                             ->label('Apjoms'),
                         Select::make('material_amount_type')
-                            ->label('Darbinieks')
+                            ->label('Apjoma tips')
                             ->default(MaterialAmountType::KILOGRAMS_LITERS_PER_HECTARE)
                             ->options(MaterialAmountType::class)
                             ->native(false),

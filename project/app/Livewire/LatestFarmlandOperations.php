@@ -15,7 +15,7 @@ class LatestFarmlandOperations extends TableWidget
     {
         return $table
             ->heading('Pēdējās apstrādes operācijas')
-            ->query(fn (): Builder => FarmlandOperation::query())
+            ->query(fn () => FarmlandOperation::query()->orderByDesc('operation_date')->limit(10))
             ->paginated(false)
             ->columns([
                 TextColumn::make('operation_date')->formatStateUsing(fn(Carbon $state) => $state->formatted())->label('Datums'),

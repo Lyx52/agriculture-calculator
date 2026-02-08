@@ -39,10 +39,10 @@ class FarmEmployeeForm
                             ->required()
                             ->default(CostType::EUR_HOUR)
                             ->options(CostType::class)
-                            ->searchable(),
-                        Hidden::make('owner_id')
-                            ->default(auth()->id())
-                    ])
+                            ->searchable()
+                    ]),
+                Hidden::make('owner_id')
+                    ->default(auth()->id())
             ]);
     }
 }

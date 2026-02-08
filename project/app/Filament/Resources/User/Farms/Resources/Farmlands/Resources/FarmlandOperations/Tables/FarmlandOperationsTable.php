@@ -2,12 +2,15 @@
 
 namespace App\Filament\Resources\User\Farms\Resources\Farmlands\Resources\FarmlandOperations\Tables;
 
+use App\Models\Farm;
+use App\Models\FarmlandOperation;
 use Carbon\Carbon;
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\RestoreAction;
 use Filament\Forms\Components\DatePicker;
+use Filament\Support\Colors\Color;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TrashedFilter;
@@ -19,9 +22,15 @@ class FarmlandOperationsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->defaultSort('operation_date')
             ->columns([
-                TextColumn::make('operation_date')->formatStateUsing(fn(Carbon $state) => $state->formatted())->label('Datums'),
-                TextColumn::make('operation.name')->searchable()->label('Apstrādes operācija'),
+                TextColumn::make('operation_date')->sortable()->formatStateUsing(fn(Carbon $state) => $state->formatted())->label('Datums'),
+                TextColumn::make('operation.name')->sortable()->searchable()->label('Apstrādes operācija'),
+                TextColumn::make('operationMaterialCount')
+                    ->badge()
+                    ->color(Color::Orange)
+                    ->getStateUsing(fn(FarmlandOperation $record) => $record->materials()->count())
+                    ->label('Izmantoto materiālu skaits'),
             ])
             ->filters([
                 TrashedFilter::make(),
@@ -47,11 +56,14 @@ class FarmlandOperationsTable
             })
             ->recordActions([
                 EditAction::make()
-                    ->label('Labot'),
+                    ->label('Labot')
+                    ->modalHeading('Labot apstrādes operāciju'),
                 DeleteAction::make()
-                    ->label('Dzēst'),
+                    ->label('Dzēst')
+                    ->modalHeading('Dzēst apstrādes operāciju'),
                 RestoreAction::make()
-                    ->label('Atjaunot'),
+                    ->label('Atjaunot')
+                    ->modalHeading('Atjaunot apstrādes operāciju'),
             ]);
     }
 }

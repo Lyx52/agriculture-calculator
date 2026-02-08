@@ -52,7 +52,7 @@ class ManageFarmlandOperations extends ManageRelatedRecords
     protected function getHeaderActions(): array
     {
         return [
-            CreateAction::make()->label('Izveidot apstrādes operāciju')
+            CreateAction::make()->label('Izveidot apstrādes operāciju')->modalHeading('Izveidot apstrādes operāciju'),
         ];
     }
 }

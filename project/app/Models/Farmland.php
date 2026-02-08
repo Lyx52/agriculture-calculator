@@ -33,7 +33,7 @@ class Farmland extends Model
 
     public function materials(): HasManyThrough
     {
-        return $this->hasManyThrough(FarmlandOperationMaterials::class, FarmlandOperation::class, 'farmland_id', 'id', 'id');
+        return $this->hasManyThrough(FarmlandOperationMaterials::class, FarmlandOperation::class, 'farmland_id', 'operation_id', 'id');
     }
 
     public function latestCropName(): Attribute {

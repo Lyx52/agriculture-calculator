@@ -16,10 +16,6 @@ class FarmlandForm
             ->columns(1)
             ->inlineLabel(false)
             ->components([
-                Select::make('crop_id')
-                    ->label('Kūltūraugs')
-                    ->options(user()->crops()->get()->pluck('cropName', 'id'))
-                    ->searchable(),
                 Select::make('agriculture_technology_code')
                     ->required()
                     ->label('Lauksaimniecības tehnoloģija')

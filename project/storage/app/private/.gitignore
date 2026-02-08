@@ -1,2 +1,6 @@
 *
 !.gitignore
+!stende
+!stende/*.json
+!codifiers
+!codifiers/*.json

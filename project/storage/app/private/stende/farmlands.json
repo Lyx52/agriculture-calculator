@@ -1,0 +1,52 @@
+[
+    {
+        "name": "1.2",
+        "agriculture_technology_code": "direct_sowing",
+        "area": 1
+    },
+    {
+        "name": "2.2",
+        "agriculture_technology_code": "direct_sowing",
+        "area": 1
+    },
+    {
+        "name": "3.2",
+        "agriculture_technology_code": "minimal_processing",
+        "area": 1
+    },
+    {
+        "name": "4.2",
+        "agriculture_technology_code": "minimal_processing",
+        "area": 1
+    },
+    {
+        "name": "5.2",
+        "agriculture_technology_code": "minimal_processing",
+        "area": 1
+    },
+    {
+        "name": "6.2",
+        "agriculture_technology_code": "minimal_processing",
+        "area": 1
+    },
+    {
+        "name": "7.2",
+        "agriculture_technology_code": "plowing",
+        "area": 1
+    },
+    {
+        "name": "8.2",
+        "agriculture_technology_code": "plowing",
+        "area": 1
+    },
+    {
+        "name": "9.2",
+        "agriculture_technology_code": "plowing",
+        "area": 1
+    },
+    {
+        "name": "10.2",
+        "agriculture_technology_code": "plowing",
+        "area": 1
+    }
+]
