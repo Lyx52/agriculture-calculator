@@ -102,7 +102,6 @@ RUN dos2unix /usr/local/bin/start-container
 COPY ./docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY ./docker/php/custom.ini /usr/local/etc/php/conf.d/custom.ini
 RUN chmod +x /usr/local/bin/start-container
-COPY ./docker/patches/Add_force_https.patch /srv/www/Add_force_https.patch
 
 EXPOSE 80 9000
 
