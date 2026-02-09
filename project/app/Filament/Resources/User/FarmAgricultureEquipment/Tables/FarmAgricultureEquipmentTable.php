@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Admin\AgricultureEquipment\Tables;
+namespace App\Filament\Resources\User\FarmAgricultureEquipment\Tables;
 
 use App\Enums\DefinedCodifiers;
 use App\Models\Codifier;
@@ -12,7 +12,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
-class AgricultureEquipmentTable
+class FarmAgricultureEquipmentTable
 {
     public static function configure(Table $table): Table
     {
@@ -22,6 +22,7 @@ class AgricultureEquipmentTable
                 TextColumn::make('manufacturer')->sortable()->searchable()->label('Marka'),
                 TextColumn::make('model')->sortable()->searchable()->label('Modelis'),
                 TextColumn::make('price')->sortable()->searchable()->label('Cena'),
+                TextColumn::make('purchased_date')->sortable()->searchable()->formatStateUsing(fn($state) => $state->formatted())->label('Iegādes datums'),
                 TextColumn::make('power')->sortable()->searchable()->label('Jauda'),
                 TextColumn::make('required_power')->sortable()->searchable()->label('Nepieciešamā jauda'),
             ])

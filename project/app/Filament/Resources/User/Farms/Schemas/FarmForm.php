@@ -43,7 +43,7 @@ class FarmForm
                                             ->label('Noklusētās darba algas tips')
                                             ->required()
                                             ->default(CostType::EUR_HOUR)
-                                            ->options(CostType::class)
+                                            ->options(CostType::workOptions())
                                             ->searchable(),
                                     ])
                             ]),

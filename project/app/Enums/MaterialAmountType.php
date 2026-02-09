@@ -14,4 +14,16 @@ enum MaterialAmountType: string implements HasLabel {
             self::KILOGRAMS_LITERS_PER_HECTARE => "kg/ha",
         };
     }
+
+    public static function kilogramsOptions(): array {
+        return [
+            self::KILOGRAMS_LITERS_PER_HECTARE->value => self::KILOGRAMS_LITERS_PER_HECTARE->getLabel(),
+        ];
+    }
+
+    public static function litersOptions(): array {
+        return [
+            self::LITERS_PER_HECTARE->value => self::LITERS_PER_HECTARE->getLabel(),
+        ];
+    }
 }

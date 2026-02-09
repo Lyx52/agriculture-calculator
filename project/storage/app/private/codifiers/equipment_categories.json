@@ -1,0 +1,267 @@
+[
+    {
+        "code": "tractor",
+        "parent_code": "agriculture_equipment_type",
+        "name": "Traktors"
+    },
+    {
+        "code": "sejas_un_stadama_tehnika",
+        "parent_code": "agriculture_equipment_type",
+        "name": "Sējas un stādāmā tehnika"
+    },
+    {
+        "code": "sejmasina",
+        "parent_code": "sejas_un_stadama_tehnika",
+        "name": "Sējmašīna"
+    },
+    {
+        "code": "sikseklu_sejmasina",
+        "parent_code": "sejas_un_stadama_tehnika",
+        "name": "Sīksēklu sējmašīna"
+    },
+    {
+        "code": "precizas_izsejas_sejmasina",
+        "parent_code": "sejas_un_stadama_tehnika",
+        "name": "Precīzās izsējas sējmašīna"
+    },
+    {
+        "code": "auglu_koku_un_ogulaju_stadama_masina",
+        "parent_code": "sejas_un_stadama_tehnika",
+        "name": "Augļu koku un ogulāju stādāmā mašīna"
+    },
+    {
+        "code": "kartupelu_stadama_masina",
+        "parent_code": "sejas_un_stadama_tehnika",
+        "name": "Kartupeļu stādāmā mašīna"
+    },
+    {
+        "code": "stadu_konteineru_pildisanas_un_stadisanas_iekarta",
+        "parent_code": "sejas_un_stadama_tehnika",
+        "name": "Stādu konteineru pildīšanas un stādīšanas iekārta"
+    },
+    {
+        "code": "darzenu_stadama_masina",
+        "parent_code": "sejas_un_stadama_tehnika",
+        "name": "Dārzeņu stādāmā mašīna"
+    },
+    {
+        "code": "lopbaribas_sagatavosanas_tehnika",
+        "parent_code": "agriculture_equipment_type",
+        "name": "Lopbarības sagatavošanas tehnika"
+    },
+    {
+        "code": "plaujmasina",
+        "parent_code": "lopbaribas_sagatavosanas_tehnika",
+        "name": "Pļaujmašīna"
+    },
+    {
+        "code": "valotajsarditajs",
+        "parent_code": "lopbaribas_sagatavosanas_tehnika",
+        "name": "Vālotājs/ārdītājs"
+    },
+    {
+        "code": "ritulu_prese",
+        "parent_code": "lopbaribas_sagatavosanas_tehnika",
+        "name": "Rituļu prese"
+    },
+    {
+        "code": "kipu_prese",
+        "parent_code": "lopbaribas_sagatavosanas_tehnika",
+        "name": "Ķīpu prese"
+    },
+    {
+        "code": "skabbaribas_blietetajveltnis",
+        "parent_code": "lopbaribas_sagatavosanas_tehnika",
+        "name": "Skābbarības blietētājveltnis"
+    },
+    {
+        "code": "salmu_smalcinatajsizkliedetajs",
+        "parent_code": "lopbaribas_sagatavosanas_tehnika",
+        "name": "Salmu smalcinātājs-izkliedētājs"
+    },
+    {
+        "code": "ietinejs",
+        "parent_code": "lopbaribas_sagatavosanas_tehnika",
+        "name": "Ietinējs"
+    },
+    {
+        "code": "prese_ar_ietineju",
+        "parent_code": "lopbaribas_sagatavosanas_tehnika",
+        "name": "Prese ar ietinēju"
+    },
+    {
+        "code": "augsnes_apstrades_tehnika_un_iekartas",
+        "parent_code": "agriculture_equipment_type",
+        "name": "Augsnes apstrādes tehnika un iekārtas"
+    },
+    {
+        "code": "veltnis",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Veltnis"
+    },
+    {
+        "code": "rugaines_kultivators",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Rugaines kultivators"
+    },
+    {
+        "code": "diski",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Diski"
+    },
+    {
+        "code": "ecesas",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Ecēšas"
+    },
+    {
+        "code": "dzilirdinatajs",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Dziļirdinātājs"
+    },
+    {
+        "code": "arkls",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Arkls"
+    },
+    {
+        "code": "freze",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Frēze"
+    },
+    {
+        "code": "kultivators",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Kultivators"
+    },
+    {
+        "code": "sluce",
+        "parent_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "name": "Šļūce"
+    },
+    {
+        "code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "parent_code": "agriculture_equipment_type",
+        "name": "Mēslošanas un augu aizsardzības tehnika"
+    },
+    {
+        "code": "organisko_meslu_izkliedetajs",
+        "parent_code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "name": "Organisko mēslu izkliedētājs"
+    },
+    {
+        "code": "mineralmeslu_un_kalka_izkliedetajs",
+        "parent_code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "name": "Minerālmēslu un kaļķa izkliedētājs"
+    },
+    {
+        "code": "smidzinatajs",
+        "parent_code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "name": "Smidzinātājs"
+    },
+    {
+        "code": "miglotajs",
+        "parent_code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "name": "Miglotājs"
+    },
+    {
+        "code": "skidrmeslu_cisterna",
+        "parent_code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "name": "Šķidrmēslu cisterna"
+    },
+    {
+        "code": "skidrmeslu_izkliedes_caurulvadu_sistema",
+        "parent_code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "name": "Šķidrmēslu izkliedes cauruļvadu sistēma"
+    },
+    {
+        "code": "skidrmeslu_izkliedetaja_aprikojums",
+        "parent_code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "name": "Šķidrmēslu izkliedētāja aprīkojums"
+    },
+    {
+        "code": "komposta_apversejs",
+        "parent_code": "meslosanas_un_augu_aizsardzibas_tehnika",
+        "name": "Komposta apvērsējs"
+    },
+    {
+        "code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "parent_code": "agriculture_equipment_type",
+        "name": "Sējumu un stādījumu kopšanas tehnika"
+    },
+    {
+        "code": "mulceris",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Mulčeris"
+    },
+    {
+        "code": "rindstarpu_kultivators",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Rindstarpu kultivators"
+    },
+    {
+        "code": "laistisanas_iekarta",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Laistīšanas iekārta"
+    },
+    {
+        "code": "lakstu_plavejs",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Lakstu pļāvējs"
+    },
+    {
+        "code": "maurina_plaujmasina",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Mauriņa pļaujmašīna"
+    },
+    {
+        "code": "akmenu_vacejs",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Akmeņu vācējs"
+    },
+    {
+        "code": "pleves_ieklajejs",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Plēves ieklājējs"
+    },
+    {
+        "code": "trimmeris",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Trimmeris"
+    },
+    {
+        "code": "kartupelu_vagotajs",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Kartupeļu vagotājs"
+    },
+    {
+        "code": "skeldotajs",
+        "parent_code": "sejumu_un_stadijumu_kopsanas_tehnika",
+        "name": "Šķeldotājs"
+    },
+    {
+        "code": "razas_novaksanas_tehnika",
+        "parent_code": "agriculture_equipment_type",
+        "name": "Ražas novākšanas tehnika"
+    },
+    {
+        "code": "ogu_novaksans_kombains",
+        "parent_code": "razas_novaksanas_tehnika",
+        "name": "Ogu novākšans kombains"
+    },
+    {
+        "code": "graudaugu_kombains",
+        "parent_code": "razas_novaksanas_tehnika",
+        "name": "Graudaugu kombains"
+    },
+    {
+        "code": "darzenu_novaksanas_kombains",
+        "parent_code": "razas_novaksanas_tehnika",
+        "name": "Dārzeņu novākšanas kombains"
+    },
+    {
+        "code": "kartupelu_novaksanas_kombains",
+        "parent_code": "razas_novaksanas_tehnika",
+        "name": "Kartupeļu novākšanas kombains"
+    }
+]

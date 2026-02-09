@@ -38,7 +38,7 @@ class FarmEmployeeForm
                             ->label('Izmaksu tips')
                             ->required()
                             ->default(CostType::EUR_HOUR)
-                            ->options(CostType::class)
+                            ->options(CostType::workOptions())
                             ->searchable()
                     ]),
                 Hidden::make('owner_id')

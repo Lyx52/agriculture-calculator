@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Enums\DefinedCodifiers;
 use App\Models\Codifier;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Storage;
 
 class CodifierSeeder extends Seeder
@@ -61,7 +62,23 @@ class CodifierSeeder extends Seeder
                         );
                     }
                 } break;
+                case DefinedCodifiers::AGRICULTURE_EQUIPMENT_TYPE: {
+                    $equipmentTypes = collect(json_decode($disk->get('codifiers/equipment_categories.json')));
+
+                    $this->recursiveCodifiers($equipmentTypes, $parent);
+                } break;
             }
+        }
+    }
+
+    private function recursiveCodifiers(Collection $items, Codifier $parent) {
+        foreach ($items->where('parent_code', $parent->code) as $item) {
+            $created = Codifier::firstOrCreate(
+                ['code' => $item->code, 'parent_id' => $parent->id],
+                ['code' => $item->code, 'parent_id' => $parent->id, 'name' => $item->name]
+            );
+
+            $this->recursiveCodifiers($items, $created);
         }
     }
 }

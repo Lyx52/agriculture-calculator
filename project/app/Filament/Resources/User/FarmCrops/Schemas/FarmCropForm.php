@@ -36,7 +36,7 @@ class FarmCropForm
                             ->label('Izmaksu tips')
                             ->required()
                             ->default(CostType::EUR_HECTARES)
-                            ->options(CostType::class)
+                            ->options(CostType::amountOptions())
                             ->searchable(),
                     ]),
                 Hidden::make('owner_id')

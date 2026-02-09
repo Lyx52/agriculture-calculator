@@ -5,6 +5,7 @@ namespace App\Filament\Resources\User\Farms\Resources\Farmlands\Resources\Farmla
 use App\Enums\DefinedCodifiers;
 use App\Enums\MaterialAmountType;
 use App\Models\Codifier;
+use App\Models\FarmAgricultureEquipment;
 use App\Models\FarmCrop;
 use App\Models\FarmEmployee;
 use App\Models\FarmPlantProtection;
@@ -13,13 +14,14 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Utilities\Get;
+use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
 
 class FarmlandOperationForm
 {
     public static function configure(Schema $schema): Schema
     {
-        $user = user()->load(['plantProtectionProducts', 'crops']);
+        $user = user()->load(['plantProtectionProducts', 'crops', 'equipment', 'employees']);
         return $schema
             ->columns(1)
             ->inlineLabel(false)
@@ -34,8 +36,30 @@ class FarmlandOperationForm
                     ->label('Apstrādes datums'),
                 Select::make('employee_id')
                     ->label('Darbinieks')
-                    ->options(FarmEmployee::all()->pluck('fullName', 'id'))
+                    ->options($user->employees->pluck('fullName', 'id'))
                     ->searchable(),
+                Repeater::make('equipmentInput')
+                    ->label('Izmantotā tehnika')
+                    ->relationship('operationEquipment')
+                    ->orderColumn(false)
+                    ->addActionLabel('Pievienot materiālu')
+                    ->schema([
+                        Select::make('equipment_id')
+                            ->native(false)
+                            ->live()
+                            ->label('Tehnikas vienība')
+                            ->options($user->equipment->pluck('fullName', 'id'))
+                            ->searchable(),
+                        Select::make('attachment_id')
+                            ->visible(function (Get $get) use ($user) {
+                                $equipment = $user->equipment->where('id', $get('equipment_id'))->first();
+                                return !($equipment?->isAttachment ?? true);
+                            })
+                            ->native(false)
+                            ->label('Agregāts')
+                            ->options($user->equipment->where('isAttachment', true)->pluck('fullName', 'id'))
+                            ->searchable(),
+                    ]),
                 Repeater::make('materialInput')
                     ->label('Izmantotie materiāli')
                     ->relationship('materials')

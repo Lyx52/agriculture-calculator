@@ -25,8 +25,14 @@ class Codifier extends Model
     }
 
     #[Scope]
-    protected function scopeWhereParentCode(Builder $query, DefinedCodifiers $parentCode)
+    protected function scopeWhereParentCode(Builder $query, DefinedCodifiers|string $parentCode)
     {
         return $query->whereRelation('parent', 'code', '=', $parentCode);
+    }
+
+    #[Scope]
+    protected function scopeWhereParentOfParentCode(Builder $query, DefinedCodifiers|string $parentCode)
+    {
+        return $query->whereRelation('parent', fn(Builder $query) => $query->whereIn('code', Codifier::whereParentCode($parentCode)->select('code')));
     }
 }

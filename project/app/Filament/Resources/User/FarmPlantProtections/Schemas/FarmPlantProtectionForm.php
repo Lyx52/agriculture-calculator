@@ -43,7 +43,7 @@ class FarmPlantProtectionForm
                             ->label('Izmaksu tips')
                             ->required()
                             ->default(CostType::EUR_HOUR)
-                            ->options(CostType::class)
+                            ->options(CostType::amountOptions())
                             ->searchable(),
                         Hidden::make('owner_id')
                             ->default(auth()->id())

@@ -13,7 +13,22 @@ return new class extends Migration
     {
         Schema::create('agriculture_equipment', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('manufacturer');
+            $table->string('model');
+            $table->string('equipment_category_code');
+            $table->string('equipment_sub_category_code')->nullable();
+            $table->date('purchased_date');
+            $table->double('price');
+
+            // Specifications
+            $table->boolean('is_self_propelled')->default(false);
+            $table->string('drive_type')->nullable();
+            $table->double('working_width')->nullable();
+            $table->double('weight')->nullable();
+            $table->double('required_power')->nullable();
+            $table->double('power')->nullable();
+            $table->double('working_speed')->nullable();
+            $table->double('specific_fuel_consumption')->nullable();
         });
     }
 

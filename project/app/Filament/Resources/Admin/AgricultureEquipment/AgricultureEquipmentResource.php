@@ -21,7 +21,7 @@ class AgricultureEquipmentResource extends Resource
     protected static ?string $navigationLabel = 'Tehnikas datubāze';
     protected static ?string $pluralLabel = 'Lauksaimniecības tehnika';
     protected static ?string $modelLabel = 'Lauksaimniecības tehnika';
-    protected static ?string $recordTitleAttribute = 'id';
+    protected static ?string $recordTitleAttribute = 'model';
 
     public static function form(Schema $schema): Schema
     {
@@ -31,13 +31,6 @@ class AgricultureEquipmentResource extends Resource
     public static function table(Table $table): Table
     {
         return AgricultureEquipmentTable::configure($table);
-    }
-
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
     }
 
     public static function getPages(): array

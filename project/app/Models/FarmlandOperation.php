@@ -29,6 +29,10 @@ class FarmlandOperation extends Model
         return $this->belongsTo(FarmEmployee::class, 'employee_id', 'id');
     }
 
+    public function operationEquipment(): HasMany {
+        return $this->hasMany(FarmlandOperationEquipment::class, 'operation_id', 'id');
+    }
+
     public function materials(): HasMany {
         return $this->hasMany(FarmlandOperationMaterials::class, 'operation_id', 'id');
     }

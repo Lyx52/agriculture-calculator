@@ -18,4 +18,28 @@ enum CostType: string implements HasLabel {
             self::EUR_HECTARES => "eur/ha",
         };
     }
+
+    public function getMaterialTypeOptions(): array
+    {
+        return match ($this) {
+            self::EUR_KILOGRAMS => MaterialAmountType::kilogramsOptions(),
+            self::EUR_LITERS => MaterialAmountType::litersOptions(),
+            default => [],
+        };
+    }
+
+    public static function amountOptions(): array {
+        return [
+            self::EUR_HECTARES->value => self::EUR_HECTARES->getLabel(),
+            self::EUR_LITERS->value => self::EUR_LITERS->getLabel(),
+            self::EUR_KILOGRAMS->value => self::EUR_KILOGRAMS->getLabel(),
+        ];
+    }
+
+    public static function workOptions(): array {
+        return [
+            self::EUR_HOUR->value => self::EUR_HOUR->getLabel(),
+            self::EUR_HECTARES->value => self::EUR_HECTARES->getLabel(),
+        ];
+    }
 }

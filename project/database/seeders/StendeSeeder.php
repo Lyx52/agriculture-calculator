@@ -65,8 +65,7 @@ class StendeSeeder extends Seeder
                 foreach ($usedMaterials as $materialData) {
                     $material = $this->getMaterial($materialData, $user);
                     if (empty($material)) {
-                        throw new Exception("$materialData->name");
-                        continue;
+                        throw new Exception($materialData->name);
                     }
 
                     $operation->materials()->create([

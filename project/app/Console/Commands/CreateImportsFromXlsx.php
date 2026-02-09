@@ -107,8 +107,8 @@ class CreateImportsFromXlsx extends Command
                 'description' => $description,
                 'name' => $protectionName,
                 'protection_category_codes' => collect($categoriesCodes)->unique()->toArray(),
-                'cost_type' => CostType::EUR_HECTARES,
-                'costs' => 10, // Varbūt jādabu no kādas datubāzes
+                'cost_type' => $row[7],
+                'costs' => floatval($row[8]), // Varbūt jādabu no kādas datubāzes
             ];
         }
 
@@ -148,7 +148,7 @@ class CreateImportsFromXlsx extends Command
             $imports[] = [
                 'crop_species_code' => $cropSpecies->get($speciesName),
                 'name' => $row[2],
-                'cost_type' => CostType::EUR_HECTARES,
+                'cost_type' => CostType::EUR_KILOGRAMS,
                 'costs' => 10, // Varbūt jādabu no kādas datubāzes
             ];
         }
