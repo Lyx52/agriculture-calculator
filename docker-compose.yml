@@ -10,16 +10,16 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:
-      - db
+      - agriculture-db
     ports:
       - 8000:8000
       - 5173:5173
 
     volumes:
       - ./project:/srv/www
-  db:
+  agriculture-db:
     image: mariadb
-    container_name: db
+    container_name: agriculture-db
     networks:
       - app-network
     ports:
