@@ -42,7 +42,7 @@ class FarmlandOperationForm
                     ->label('Izmantotā tehnika')
                     ->relationship('operationEquipment')
                     ->orderColumn(false)
-                    ->addActionLabel('Pievienot materiālu')
+                    ->addActionLabel('Pievienot tehniku')
                     ->schema([
                         Select::make('equipment_id')
                             ->native(false)
@@ -53,7 +53,7 @@ class FarmlandOperationForm
                         Select::make('attachment_id')
                             ->visible(function (Get $get) use ($user) {
                                 $equipment = $user->equipment->where('id', $get('equipment_id'))->first();
-                                return !($equipment?->isAttachment ?? true);
+                                return !($equipment?->isAttachment ?? true) && !($equipment?->is_self_propelled ?? false);
                             })
                             ->native(false)
                             ->label('Agregāts')

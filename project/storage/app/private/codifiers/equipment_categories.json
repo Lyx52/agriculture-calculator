@@ -5,6 +5,21 @@
         "name": "Traktors"
     },
     {
+        "code": "transport_trailer",
+        "parent_code": "agriculture_equipment_type",
+        "name": "Piekabe"
+    },
+    {
+        "code": "grain_transport_trailer",
+        "parent_code": "transport_trailer",
+        "name": "Graudu piekabe"
+    },
+    {
+        "code": "water_transport_trailer",
+        "parent_code": "transport_trailer",
+        "name": "Ūdens transportēšanas piekabe"
+    },
+    {
         "code": "sejas_un_stadama_tehnika",
         "parent_code": "agriculture_equipment_type",
         "name": "Sējas un stādāmā tehnika"

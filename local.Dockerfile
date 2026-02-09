@@ -78,8 +78,7 @@ RUN corepack enable && \
 
 
 # Add cron
-# RUN crontab -l -u www-data | { cat; echo "* * * * * cd /srv/www/ && /usr/local/bin/php artisan schedule:run >> /dev/null 2>&1"; } | crontab -u www-data -
-
+RUN crontab -l -u www-data | { cat; echo "* * * * * cd /srv/www/ && /usr/local/bin/php artisan schedule:run >> /dev/null 2>&1"; } | crontab -u www-data -
 
 # Copy Nginx Configurations
 COPY ./docker/nginx/conf.d/vhost.conf /etc/nginx/conf.d/vhost.conf
@@ -94,8 +93,6 @@ COPY ./docker/php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 RUN chmod +x /usr/local/bin/start-container
 
 COPY ./project /srv/www
-
-
 
 EXPOSE 80 9000
 

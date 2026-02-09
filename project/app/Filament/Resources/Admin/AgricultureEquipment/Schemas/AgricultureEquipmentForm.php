@@ -5,11 +5,12 @@ namespace App\Filament\Resources\Admin\AgricultureEquipment\Schemas;
 use App\Enums\DefinedCodifiers;
 use App\Enums\DefinedEquipmentTypes;
 use App\Enums\DriveType;
+use App\Enums\WorkAmountType;
 use App\Models\Codifier;
-use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
@@ -72,7 +73,7 @@ class AgricultureEquipmentForm
         return [
             TextInput::make('required_power')
                 ->visible(fn(Get $get) => empty($get('is_self_propelled')))
-                ->label('Nepieciešamā')
+                ->label('Nepieciešamā jauda')
                 ->numeric()
                 ->required()
                 ->postfix('kW'),
@@ -94,11 +95,18 @@ class AgricultureEquipmentForm
                 ->numeric()
                 ->required()
                 ->postfix('kg'),
-            TextInput::make('working_width')
-                ->label('Darba platums')
-                ->numeric()
-                ->required()
-                ->postfix('m'),
+            Grid::make()
+                ->schema([
+                    TextInput::make('work_amount')
+                        ->label('Darba apjoms')
+                        ->numeric()
+                        ->required(),
+                    Select::make('work_amount_type')
+                        ->label('Darba apjoma tips')
+                        ->default(WorkAmountType::METERS)
+                        ->options(WorkAmountType::class)
+                        ->required(),
+                ]),
             TextInput::make('working_speed')
                 ->label('Darba ātrums')
                 ->default(7.0)

@@ -23,7 +23,8 @@ return new class extends Migration
             // Specifications
             $table->boolean('is_self_propelled')->default(false);
             $table->string('drive_type')->nullable();
-            $table->double('working_width')->nullable();
+            $table->double('work_amount')->nullable();
+            $table->string('work_amount_type')->nullable();
             $table->double('weight')->nullable();
             $table->double('required_power')->nullable();
             $table->double('power')->nullable();

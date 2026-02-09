@@ -31,6 +31,11 @@ class FarmlandOperationsTable
                     ->color(Color::Orange)
                     ->getStateUsing(fn(FarmlandOperation $record) => $record->materials()->count())
                     ->label('Izmantoto materiālu skaits'),
+                TextColumn::make('operationEquipmentCount')
+                    ->badge()
+                    ->color(Color::Blue)
+                    ->getStateUsing(fn(FarmlandOperation $record) => $record->operationEquipment()->count())
+                    ->label('Izmantotās tehnikas skaits'),
             ])
             ->filters([
                 TrashedFilter::make(),

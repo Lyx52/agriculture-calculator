@@ -4,6 +4,7 @@ namespace App\Models\Traits;
 
 use App\Enums\DefinedEquipmentTypes;
 use App\Enums\DriveType;
+use App\Enums\WorkAmountType;
 use App\Models\Codifier;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -33,7 +34,8 @@ trait ImplementsAgricultureEquipment {
             'purchased_date' => 'date',
             'is_self_propelled' => 'bool',
             'drive_type' => DriveType::class,
-            'working_width' => 'double',
+            'work_amount_type' => WorkAmountType::class,
+            'work_amount' => 'double',
             'weight' => 'double',
             'required_power' => 'double',
             'power' => 'double',

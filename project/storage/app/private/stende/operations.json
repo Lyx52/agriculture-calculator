@@ -17,6 +17,12 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
         ]
     },
     {
@@ -35,67 +41,133 @@
         "operation_date": "2024-03-05",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2024-03-05",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2024-04-11",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2024-04-11",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2024-04-11",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2024-04-11",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2024-04-30",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "165"
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-01",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-01",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-01",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-01",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-01",
@@ -135,6 +207,16 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            },
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone Centaya 3000 Special"
+            }
         ]
     },
     {
@@ -154,6 +236,16 @@
                 "material_amount": 1.5,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            },
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone Centaya 3000 Special"
             }
         ]
     },
@@ -175,6 +267,16 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            },
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone Centaya 3000 Special"
+            }
         ]
     },
     {
@@ -194,6 +296,16 @@
                 "material_amount": 1.5,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            },
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone Centaya 3000 Special"
             }
         ]
     },
@@ -201,55 +313,141 @@
         "operation_date": "2024-05-23",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "AXAN N27-S4",
+                "material_amount": 200,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-23",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "AXAN N27-S4",
+                "material_amount": 200,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-23",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "AXAN N27-S4",
+                "material_amount": 200,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-23",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "AXAN N27-S4",
+                "material_amount": 200,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-23",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-27",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-27",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-27",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2024-05-27",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2024-06-05",
@@ -268,6 +466,12 @@
                 "material_amount": 0.5,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -283,6 +487,12 @@
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
         ]
     },
     {
@@ -302,6 +512,12 @@
                 "material_amount": 0.5,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -323,157 +539,377 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
         ]
     },
     {
         "operation_date": "2024-08-13",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "AGCO Sampo Rosenlew Comia C6",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
     },
     {
         "operation_date": "2024-08-13",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "AGCO Sampo Rosenlew Comia C6",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
     },
     {
         "operation_date": "2024-08-13",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "AGCO Sampo Rosenlew Comia C6",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
     },
     {
         "operation_date": "2024-08-13",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "AGCO Sampo Rosenlew Comia C6",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
     },
     {
         "operation_date": "2024-08-13",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "AGCO Sampo Rosenlew Comia C6",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
     },
     {
         "operation_date": "2024-11-11",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2024-11-11",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2024-11-11",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2024-11-11",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2025-03-27",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2025-03-27",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2025-03-27",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2025-03-27",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-10",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 400,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-10",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 400,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-10",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 400,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-10",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 400,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-10",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 400,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-10",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 400,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-10",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 400,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-10",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 400,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-14",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-14",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-14",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-14",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-14",
@@ -486,6 +922,12 @@
                 "material_amount": 260,
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -500,6 +942,12 @@
                 "material_amount": 260,
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -515,6 +963,12 @@
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
         ]
     },
     {
@@ -528,6 +982,12 @@
                 "material_amount": 260,
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -543,6 +1003,12 @@
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
         ]
     },
     {
@@ -557,6 +1023,12 @@
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
         ]
     },
     {
@@ -570,6 +1042,12 @@
                 "material_amount": 260,
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -577,13 +1055,53 @@
         "operation_date": "2025-04-22",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 224,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 350,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Case MX 240",
+                "attachment": "Amazone Primera DMC 6000-2C"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-22",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "Bruno",
+                "material_amount": 224,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 350,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Case MX 240",
+                "attachment": "Amazone Primera DMC 6000-2C"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-15",
@@ -597,67 +1115,133 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
         ]
     },
     {
         "operation_date": "2025-04-15",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "165"
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
     },
     {
         "operation_date": "2025-04-29",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "165"
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-12",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-12",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-12",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-12",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-12",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-12",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-21",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-21",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "150"
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
     },
     {
         "operation_date": "2025-05-24",
@@ -670,6 +1254,18 @@
                 "material_amount": 0.625,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Dasch",
+                "material_amount": 0.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -684,6 +1280,18 @@
                 "material_amount": 0.625,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Dasch",
+                "material_amount": 0.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -698,6 +1306,18 @@
                 "material_amount": 0.625,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Dasch",
+                "material_amount": 0.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -712,6 +1332,18 @@
                 "material_amount": 0.625,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Dasch",
+                "material_amount": 0.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -726,6 +1358,18 @@
                 "material_amount": 0.625,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Dasch",
+                "material_amount": 0.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -740,6 +1384,18 @@
                 "material_amount": 1.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Dasch",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -754,6 +1410,18 @@
                 "material_amount": 1.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Dasch",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -768,6 +1436,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -782,6 +1468,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -796,6 +1500,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -810,6 +1532,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -824,6 +1564,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -838,6 +1596,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -852,6 +1628,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -866,6 +1660,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -880,6 +1692,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -894,6 +1724,24 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Brasitrel PRO",
+                "material_amount": 1.5,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Bortrac",
+                "material_amount": 1,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -908,6 +1756,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -922,6 +1782,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -936,6 +1808,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -950,6 +1834,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -964,6 +1860,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -978,6 +1886,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -992,6 +1912,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -1006,6 +1938,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -1020,6 +1964,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -1034,6 +1990,18 @@
                 "material_amount": 0.25,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            },
+            {
+                "name": "Zoom",
+                "material_amount": 2,
+                "material_amount_type": "liters_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -1041,61 +2009,111 @@
         "operation_date": "2025-08-27",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-27",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-12",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-12",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-12",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-12",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-12",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-12",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-12",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-08-12",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "182"
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-01",
@@ -1129,121 +2147,305 @@
         "operation_date": "2025-09-12",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-12",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-12",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-12",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "120"
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-10",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-10",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-10",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-10",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "110"
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-22",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-22",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-22",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-22",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "121"
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-23",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-23",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-23",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-23",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
-        "operation_code": "131"
+        "operation_code": "131",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-23",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-23",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-23",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-23",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
-        "operation_code": "160"
+        "operation_code": "160",
+        "used_materials": [
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
     },
     {
         "operation_date": "2025-09-26",
@@ -1259,9 +2461,15 @@
             },
             {
                 "name": "Celest Trio 060 FS",
-                "material_amount": 2,
+                "material_amount": 0.212,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -1279,9 +2487,15 @@
             },
             {
                 "name": "Celest Trio 060 FS",
-                "material_amount": 2,
+                "material_amount": 0.212,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -1299,9 +2513,15 @@
             },
             {
                 "name": "Celest Trio 060 FS",
-                "material_amount": 2,
+                "material_amount": 0.212,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -1319,9 +2539,15 @@
             },
             {
                 "name": "Celest Trio 060 FS",
-                "material_amount": 2,
+                "material_amount": 0.212,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -1339,9 +2565,15 @@
             },
             {
                 "name": "Celest Trio 060 FS",
-                "material_amount": 2,
+                "material_amount": 0.212,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -1359,9 +2591,15 @@
             },
             {
                 "name": "Celest Trio 060 FS",
-                "material_amount": 2,
+                "material_amount": 0.212,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -1379,9 +2617,15 @@
             },
             {
                 "name": "Celest Trio 060 FS",
-                "material_amount": 2,
+                "material_amount": 0.212,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -1399,9 +2643,15 @@
             },
             {
                 "name": "Celest Trio 060 FS",
-                "material_amount": 2,
+                "material_amount": 0.212,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
             }
         ]
     },
@@ -1416,6 +2666,18 @@
                 "material_amount": 212,
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Case MX 240",
+                "attachment": "Amazone Primera DMC 6000-2C"
             }
         ]
     },
@@ -1430,6 +2692,18 @@
                 "material_amount": 212,
                 "material_amount_type": "kilograms_per_hectare",
                 "material_type": "App\\Models\\FarmCrop"
+            },
+            {
+                "name": "NPK 7-20-30",
+                "material_amount": 300,
+                "material_amount_type": "kilograms_per_hectare",
+                "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Case MX 240",
+                "attachment": "Amazone Primera DMC 6000-2C"
             }
         ]
     },
@@ -1451,6 +2725,12 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
         ]
     },
     {
@@ -1470,6 +2750,12 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -1491,6 +2777,12 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
         ]
     },
     {
@@ -1510,6 +2802,12 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -1531,6 +2829,12 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
         ]
     },
     {
@@ -1550,6 +2854,12 @@
                 "material_amount": 0.2,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     },
@@ -1571,6 +2881,12 @@
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
             }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
         ]
     },
     {
@@ -1590,6 +2906,12 @@
                 "material_amount": 0.15,
                 "material_amount_type": "liters_per_hectare",
                 "material_type": "App\\Models\\FarmPlantProtection"
+            }
+        ],
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
             }
         ]
     }

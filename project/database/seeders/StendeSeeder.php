@@ -28,6 +28,59 @@ class StendeSeeder extends Seeder
             'password' => bcrypt('stende'),
         ]);
 
+        $user->plantProtectionProducts()->createOrFirst([ 'name' => 'NPK 7-20-30', 'owner_id' => $user->id ], [
+            'owner_id' => $user->id,
+            'name' => 'NPK 7-20-30',
+            'protection_category_codes' => ["crop_usage_3471"],
+            'cost_type' => 'eur_liters',
+            'costs' => 10
+        ]);
+
+        $user->plantProtectionProducts()->createOrFirst([ 'name' => 'Zoom', 'owner_id' => $user->id ], [
+            'owner_id' => $user->id,
+            'name' => 'Zoom',
+            'protection_category_codes' => ["crop_usage_3471"],
+            'cost_type' => 'eur_liters',
+            'company' => 'Agri Crop Solutions',
+            'costs' => 10
+        ]);
+
+        $user->plantProtectionProducts()->createOrFirst([ 'name' => 'Brasitrel PRO', 'owner_id' => $user->id ], [
+            'owner_id' => $user->id,
+            'name' => 'Brasitrel PRO',
+            'protection_category_codes' => ["crop_usage_3471"],
+            'cost_type' => 'eur_liters',
+            'company' => 'YaraVita',
+            'costs' => 10
+        ]);
+
+        $user->plantProtectionProducts()->createOrFirst([ 'name' => 'Bortrac', 'owner_id' => $user->id ], [
+            'owner_id' => $user->id,
+            'name' => 'Bortrac',
+            'protection_category_codes' => ["crop_usage_3471"],
+            'cost_type' => 'eur_liters',
+            'company' => 'YaraVita',
+            'costs' => 10
+        ]);
+
+        $user->plantProtectionProducts()->createOrFirst([ 'name' => 'Dasch', 'owner_id' => $user->id ], [
+            'owner_id' => $user->id,
+            'name' => 'Dasch',
+            'protection_category_codes' => ["crop_usage_3468"],
+            'cost_type' => 'eur_liters',
+            'company' => 'BASF',
+            'costs' => 10
+        ]);
+
+        $user->plantProtectionProducts()->createOrFirst([ 'name' => 'AXAN N27-S4', 'owner_id' => $user->id ], [
+            'owner_id' => $user->id,
+            'name' => 'AXAN N27-S4',
+            'protection_category_codes' => ["crop_usage_3471"],
+            'cost_type' => 'eur_liters',
+            'company' => 'YaraBela',
+            'costs' => 10
+        ]);
+
         /** @var Farm $farm */
         $farm = $user->farms()->first();
         if (empty($farm)) {
@@ -45,6 +98,17 @@ class StendeSeeder extends Seeder
                 ...((array)$farmlandData)
             ]);
             $farmlandsByName[$farmland->name] = $farmland;
+        }
+
+        $user->equipment()->forceDelete();
+        $equipment = collect(json_decode($disk->get('stende/equipment.json')));
+        $equipmentByName = [];
+        foreach ($equipment as $equipmentData) {
+            $equipmentInstance = $user->equipment()->create([
+                ...(array)$equipmentData
+            ]);
+
+            $equipmentByName["$equipmentInstance->manufacturer $equipmentInstance->model"] = $equipmentInstance->id;
         }
 
         $operations = collect(json_decode($disk->get('stende/operations.json')))->groupBy('farmland');
@@ -73,6 +137,21 @@ class StendeSeeder extends Seeder
                         'material_id' => $material->id,
                         'material_amount_type' => $materialData->material_amount_type,
                         'material_amount' => $materialData->material_amount,
+                    ]);
+                }
+
+                $usedEquipment = $operationData->used_equipment ?? [];
+
+                foreach ($usedEquipment as $equipmentData) {
+                    $equipmentId = $equipmentByName[$equipmentData->equipment];
+                    if (empty($equipmentId)) {
+                        throw new Exception($equipmentData->equipment);
+                    }
+                    $attachmentId = $equipmentByName[$equipmentData->attachment ?? ''] ?? null;
+
+                    $operation->operationEquipment()->create([
+                        'equipment_id' => $equipmentId,
+                        'attachment_id' => $attachmentId,
                     ]);
                 }
             }

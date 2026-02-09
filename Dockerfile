@@ -7,11 +7,6 @@ ARG PROJECT_DIRECTORY=/srv/www
 
 WORKDIR /srv/www
 
-# Add Forticlient certificate
-COPY ./docker/certs/Fortinet_CA_SSL.cer /usr/share/ca-certificates/
-RUN grep -qxF 'Fortinet_CA_SSL.cer' /etc/ca-certificates.conf || echo 'Fortinet_CA_SSL.cer' >> /etc/ca-certificates.conf && \
-    update-ca-certificates
-
 # Install dependencies
 RUN apt-get update && apt-get -y install \
     libxml2-dev  \
