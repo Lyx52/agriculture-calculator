@@ -2,17 +2,17 @@
 
 namespace App\Models;
 
+use App\Enums\CostType;
 use App\Enums\UnitType;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class FarmCrop extends Model
+class FarmFertilizer extends Model
 {
     use SoftDeletes;
     protected $guarded = ['id'];
-
     protected $casts = [
         'cost_per_unit' => 'double',
         'unit_type' => UnitType::class,
@@ -22,15 +22,7 @@ class FarmCrop extends Model
         return $this->belongsTo(User::class, 'owner_id', 'id');
     }
 
-    public function species(): BelongsTo {
-        return $this->belongsTo(Codifier::class, 'crop_species_code', 'code');
-    }
-
     public function costsText(): Attribute {
         return new Attribute(fn() => "$this->cost_per_unit EUR/{$this->unit_type->getLabel()}");
-    }
-
-    public function cropName(): Attribute {
-        return new Attribute(fn() => "$this->name ({$this->species->name})");
     }
 }

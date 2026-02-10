@@ -5,8 +5,10 @@ namespace App\Console\Commands;
 use App\Enums\CostType;
 use App\Enums\DefaultImports;
 use App\Enums\DefinedCodifiers;
+use App\Enums\UnitType;
 use App\Models\Codifier;
 use App\Models\FarmCrop;
+use App\Models\FarmFertilizer;
 use App\Models\FarmPlantProtection;
 use App\Models\UserDefaultImports;
 use Illuminate\Console\Command;
@@ -39,6 +41,7 @@ class CreateImportsFromXlsx extends Command
     public function handle()
     {
         UserDefaultImports::query()->truncate();
+        $this->createFertilizerDefaults();
         $this->createCropProtectionDefault();
         $this->createCropsDefault();
     }
@@ -107,8 +110,8 @@ class CreateImportsFromXlsx extends Command
                 'description' => $description,
                 'name' => $protectionName,
                 'protection_category_codes' => collect($categoriesCodes)->unique()->toArray(),
-                'cost_type' => $row[7],
-                'costs' => floatval($row[8]), // Varbūt jādabu no kādas datubāzes
+                'unit_type' => $row[7],
+                'cost_per_unit' => floatval($row[8]), // Varbūt jādabu no kādas datubāzes
             ];
         }
 
@@ -148,8 +151,8 @@ class CreateImportsFromXlsx extends Command
             $imports[] = [
                 'crop_species_code' => $cropSpecies->get($speciesName),
                 'name' => $row[2],
-                'cost_type' => CostType::EUR_KILOGRAMS,
-                'costs' => 10, // Varbūt jādabu no kādas datubāzes
+                'unit_type' => UnitType::KILOGRAMS,
+                'cost_per_unit' => 10, // Varbūt jādabu no kādas datubāzes
             ];
         }
 
@@ -157,6 +160,53 @@ class CreateImportsFromXlsx extends Command
             'import_type' => DefaultImports::CROP_SPECIES,
             'imports' => $imports,
             'model_type' => FarmCrop::class,
+        ]);
+    }
+
+    private function createFertilizerDefaults() {
+        $imports = [];
+        foreach ($this->readXlsx('mineralmeslojums.xlsx') as $row) {
+            $fertilizerName = $row[2];
+            $companyName = $row[1] ?? '';
+            if (empty($fertilizerName)) {
+                continue;
+            }
+
+            $unitType = $row[3] ?? UnitType::KILOGRAMS;
+
+            if (empty($unitType)) {
+                continue;
+            }
+
+            $costPerUnit = floatval($row[6] ?? 1);
+
+            $imports[] = [
+                'name' => $fertilizerName,
+                'unit_type' => $unitType,
+                'cost_per_unit' => round($costPerUnit, 2),
+                'value_caco3' => floatval($row[21] ?? 0),
+                'value_zn' => floatval($row[20] ?? 0),
+                'value_mo' => floatval($row[19] ?? 0),
+                'value_mn' => floatval($row[18] ?? 0),
+                'value_fe' => floatval($row[17] ?? 0),
+                'value_cu' => floatval($row[16] ?? 0),
+                'value_co' => floatval($row[15] ?? 0),
+                'value_b' => floatval($row[14] ?? 0),
+                'value_s' => floatval($row[13] ?? 0),
+                'value_na' => floatval($row[12] ?? 0),
+                'value_mg' => floatval($row[11] ?? 0),
+                'value_ca' => floatval($row[10] ?? 0),
+                'value_k2o' => floatval($row[9] ?? 0),
+                'value_p2o5' => floatval($row[8] ?? 0),
+                'value_n' => floatval($row[7] ?? 0),
+                'company' => $companyName,
+            ];
+        }
+
+        UserDefaultImports::create([
+            'import_type' => DefaultImports::FERTILIZERS,
+            'imports' => $imports,
+            'model_type' => FarmFertilizer::class,
         ]);
     }
 }

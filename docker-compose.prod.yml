@@ -6,7 +6,7 @@ services:
       - app-network
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./local.Dockerfile
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:

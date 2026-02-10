@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\UnitType;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -19,8 +20,8 @@ return new class extends Migration
             $table->json("protection_category_codes")->default("[]");
             $table->text("description")->nullable();
             $table->string("company")->nullable();
-            $table->double('costs')->default(0);
-            $table->string('cost_type');
+            $table->double('cost_per_unit')->default(0);
+            $table->string('unit_type')->default(UnitType::KILOGRAMS->value);
             $table->timestamps();
             $table->softDeletes();
         });

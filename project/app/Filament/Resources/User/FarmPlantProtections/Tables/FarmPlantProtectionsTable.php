@@ -28,7 +28,7 @@ class FarmPlantProtectionsTable
                 TextColumn::make('name')->searchable()->sortable()->label('Nosaukums'),
                 TextColumn::make('company')->searchable()->sortable()->label('Īpašnieks'),
                 TextColumn::make('categoriesText')->label('Kategorijas'),
-                TextColumn::make('costs')->sortable()->formatStateUsing(fn(FarmPlantProtection $record) => $record->costsText)->label('Izmaksas'),
+                TextColumn::make('cost_per_unit')->sortable()->formatStateUsing(fn(FarmPlantProtection $record) => $record->costsText)->label('Izmaksas'),
             ])
             ->filters([
                 TrashedFilter::make(),

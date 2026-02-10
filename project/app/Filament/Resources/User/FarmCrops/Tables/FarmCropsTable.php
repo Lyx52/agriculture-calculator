@@ -24,7 +24,7 @@ class FarmCropsTable
             ->columns([
                 TextColumn::make('name')->searchable()->sortable()->label('Šķirnes nosaukums'),
                 TextColumn::make('species.name')->searchable()->sortable()->label('Sugas nosaukums'),
-                TextColumn::make('costs')->sortable()->formatStateUsing(fn(FarmCrop $record) => $record->costsText)->label('Izmaksas'),
+                TextColumn::make('cost_per_unit')->sortable()->formatStateUsing(fn(FarmCrop $record) => $record->costsText)->label('Izmaksas'),
             ])
             ->filters([
                 TrashedFilter::make(),

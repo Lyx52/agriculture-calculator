@@ -3,8 +3,10 @@
 namespace Database\Seeders;
 
 use App\Enums\DefinedCodifiers;
+use App\Enums\UnitType;
 use App\Models\Farm;
 use App\Models\FarmCrop;
+use App\Models\FarmFertilizer;
 use App\Models\Farmland;
 use App\Models\FarmlandOperation;
 use App\Models\FarmPlantProtection;
@@ -32,53 +34,54 @@ class StendeSeeder extends Seeder
             'owner_id' => $user->id,
             'name' => 'NPK 7-20-30',
             'protection_category_codes' => ["crop_usage_3471"],
-            'cost_type' => 'eur_liters',
-            'costs' => 10
+            'unit_type' => UnitType::LITERS,
+            'cost_per_unit' => 10
         ]);
 
         $user->plantProtectionProducts()->createOrFirst([ 'name' => 'Zoom', 'owner_id' => $user->id ], [
             'owner_id' => $user->id,
             'name' => 'Zoom',
             'protection_category_codes' => ["crop_usage_3471"],
-            'cost_type' => 'eur_liters',
+            'unit_type' => UnitType::LITERS,
             'company' => 'Agri Crop Solutions',
-            'costs' => 10
+            'cost_per_unit' => 10
         ]);
 
         $user->plantProtectionProducts()->createOrFirst([ 'name' => 'Brasitrel PRO', 'owner_id' => $user->id ], [
             'owner_id' => $user->id,
             'name' => 'Brasitrel PRO',
             'protection_category_codes' => ["crop_usage_3471"],
-            'cost_type' => 'eur_liters',
+            'unit_type' => UnitType::LITERS,
             'company' => 'YaraVita',
-            'costs' => 10
+            'cost_per_unit' => 10
         ]);
 
         $user->plantProtectionProducts()->createOrFirst([ 'name' => 'Bortrac', 'owner_id' => $user->id ], [
             'owner_id' => $user->id,
             'name' => 'Bortrac',
             'protection_category_codes' => ["crop_usage_3471"],
-            'cost_type' => 'eur_liters',
+            'unit_type' => UnitType::LITERS,
             'company' => 'YaraVita',
-            'costs' => 10
+            'cost_per_unit' => 10
         ]);
 
         $user->plantProtectionProducts()->createOrFirst([ 'name' => 'Dasch', 'owner_id' => $user->id ], [
             'owner_id' => $user->id,
             'name' => 'Dasch',
             'protection_category_codes' => ["crop_usage_3468"],
-            'cost_type' => 'eur_liters',
+            'unit_type' => UnitType::LITERS,
             'company' => 'BASF',
-            'costs' => 10
+            'cost_per_unit' => 10
         ]);
 
-        $user->plantProtectionProducts()->createOrFirst([ 'name' => 'AXAN N27-S4', 'owner_id' => $user->id ], [
+        $user->fertilizers()->createOrFirst([ 'name' => '(N)-27 (S)-4', 'owner_id' => $user->id ], [
             'owner_id' => $user->id,
-            'name' => 'AXAN N27-S4',
-            'protection_category_codes' => ["crop_usage_3471"],
-            'cost_type' => 'eur_liters',
+            'name' => '(N)-27 (S)-4',
+            'unit_type' => UnitType::KILOGRAMS,
             'company' => 'YaraBela',
-            'costs' => 10
+            'cost_per_unit' => 1,
+            'value_n' => 27,
+            'value_s' => 4
         ]);
 
         /** @var Farm $farm */
@@ -129,7 +132,7 @@ class StendeSeeder extends Seeder
                 foreach ($usedMaterials as $materialData) {
                     $material = $this->getMaterial($materialData, $user);
                     if (empty($material)) {
-                        throw new Exception($materialData->name);
+                        throw new Exception("'$materialData->name', '$materialData->material_type'");
                     }
 
                     $operation->materials()->create([
@@ -162,6 +165,7 @@ class StendeSeeder extends Seeder
         return match($materialData->material_type) {
             FarmPlantProtection::class => $user->plantProtectionProducts()->firstWhere('name', $materialData->name),
             FarmCrop::class => $user->crops()->firstWhere('name', $materialData->name),
+            FarmFertilizer::class => $user->fertilizers()->firstWhere('name', $materialData->name),
         };
     }
 }

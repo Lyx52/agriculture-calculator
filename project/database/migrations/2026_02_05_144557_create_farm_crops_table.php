@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\UnitType;
 use App\Models\Farm;
 use App\Models\FarmCrop;
 use App\Models\User;
@@ -19,8 +20,8 @@ return new class extends Migration
             $table->foreignIdFor(User::class, 'owner_id')->constrained()->cascadeOnDelete();
             $table->string('name');
             $table->string('crop_species_code');
-            $table->double('costs')->default(0);
-            $table->string('cost_type');
+            $table->double('cost_per_unit')->default(0);
+            $table->string('unit_type')->default(UnitType::KILOGRAMS->value);
             $table->timestamps();
             $table->softDeletes();
         });

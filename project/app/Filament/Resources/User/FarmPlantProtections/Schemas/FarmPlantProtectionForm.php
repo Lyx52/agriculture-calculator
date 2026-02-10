@@ -4,6 +4,7 @@ namespace App\Filament\Resources\User\FarmPlantProtections\Schemas;
 
 use App\Enums\CostType;
 use App\Enums\DefinedCodifiers;
+use App\Enums\UnitType;
 use App\Models\Codifier;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Select;
@@ -35,18 +36,17 @@ class FarmPlantProtectionForm
                     ->label('Apraksts'),
                 Fieldset::make()
                     ->schema([
-                        TextInput::make('costs')
+                        TextInput::make('cost_per_unit')
                             ->numeric()
                             ->required()
-                            ->label('Izmaksas'),
-                        Select::make('cost_type')
-                            ->label('Izmaksu tips')
+                            ->label('Izmaksas uz mērvienību')
+                            ->postfix('EUR'),
+                        Select::make('unit_type')
+                            ->label('Mērvienība')
                             ->required()
-                            ->default(CostType::EUR_HOUR)
-                            ->options(CostType::amountOptions())
-                            ->searchable(),
-                        Hidden::make('owner_id')
-                            ->default(auth()->id())
+                            ->default(UnitType::KILOGRAMS)
+                            ->options(UnitType::class)
+                            ->native(false),
                     ]),
                 Hidden::make('owner_id')
                     ->default(auth()->id())

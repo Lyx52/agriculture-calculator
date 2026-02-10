@@ -316,10 +316,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "AXAN N27-S4",
+                "name": "(N)-27 (S)-4",
                 "material_amount": 200,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -336,10 +336,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "AXAN N27-S4",
+                "name": "(N)-27 (S)-4",
                 "material_amount": 200,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -356,10 +356,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "AXAN N27-S4",
+                "name": "(N)-27 (S)-4",
                 "material_amount": 200,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -376,10 +376,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "AXAN N27-S4",
+                "name": "(N)-27 (S)-4",
                 "material_amount": 200,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -710,10 +710,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 400,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -730,10 +730,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 400,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -750,10 +750,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 400,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -770,10 +770,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 400,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -790,10 +790,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 400,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -810,10 +810,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 400,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -830,10 +830,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 400,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -850,10 +850,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 400,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -1064,10 +1064,10 @@
                 "material_type": "App\\Models\\FarmCrop"
             },
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 350,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -1090,10 +1090,10 @@
                 "material_type": "App\\Models\\FarmCrop"
             },
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 350,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2294,10 +2294,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2314,10 +2314,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2334,10 +2334,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2354,10 +2354,10 @@
         "operation_code": "131",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2374,10 +2374,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2394,10 +2394,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2414,10 +2414,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2434,10 +2434,10 @@
         "operation_code": "160",
         "used_materials": [
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2668,10 +2668,10 @@
                 "material_type": "App\\Models\\FarmCrop"
             },
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [
@@ -2694,10 +2694,10 @@
                 "material_type": "App\\Models\\FarmCrop"
             },
             {
-                "name": "NPK 7-20-30",
+                "name": "NPK (7-20-30)",
                 "material_amount": 300,
                 "material_amount_type": "kilograms_per_hectare",
-                "material_type": "App\\Models\\FarmPlantProtection"
+                "material_type": "App\\Models\\FarmFertilizer"
             }
         ],
         "used_equipment": [

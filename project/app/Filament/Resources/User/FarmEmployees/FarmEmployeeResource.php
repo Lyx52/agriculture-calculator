@@ -20,10 +20,10 @@ class FarmEmployeeResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $navigationLabel = 'Mani darbinieki';
-    protected static ?string $breadcrumb = 'Mani darbinieki';
-    protected static ?string $pluralLabel = 'Mani darbinieki';
-    protected static ?string $modelLabel = 'Darbinieks';
+    protected static ?string $navigationLabel = 'Mani darbinieki / pakalpojumi';
+    protected static ?string $breadcrumb = 'Mani darbinieki / pakalpojumi';
+    protected static ?string $pluralLabel = 'Mani darbinieki / pakalpojumi';
+    protected static ?string $modelLabel = 'Darbinieks / Pakalpojums';
     protected static ?int $navigationSort = 2;
     protected static ?string $recordTitleAttribute = 'name';
 
