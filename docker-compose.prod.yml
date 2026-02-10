@@ -13,7 +13,6 @@ services:
       - agriculture-db
     ports:
       - 8001:8000
-      - 5173:5173
     volumes:
       - ./project:/srv/www
   agriculture-db:
