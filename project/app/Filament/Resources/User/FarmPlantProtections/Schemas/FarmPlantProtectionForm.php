@@ -31,7 +31,7 @@ class FarmPlantProtectionForm
                     ->searchable()
                     ->label('Kategorijas'),
                 TextInput::make('company')
-                    ->label('Īpašnieks'),
+                    ->label('Ražotājs'),
                 Textarea::make('description')
                     ->label('Apraksts'),
                 Fieldset::make()

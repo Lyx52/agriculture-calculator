@@ -36,8 +36,8 @@ class FarmlandOperationForm
                     ->required()
                     ->label('Apstrādes datums'),
                 Select::make('employee_id')
-                    ->label('Darbinieks')
-                    ->options($user->employees->pluck('fullName', 'id'))
+                    ->label('Darbinieks / Ārējais pakalpojumu sniedzējs')
+                    ->options($user->employees->pluck('fullNameWithType', 'id'))
                     ->searchable(),
                 Repeater::make('equipmentInput')
                     ->label('Izmantotā tehnika')

@@ -26,7 +26,7 @@ class FarmPlantProtectionsTable
             ->query(user()->plantProtectionProducts()->getQuery())
             ->columns([
                 TextColumn::make('name')->searchable()->sortable()->label('Nosaukums'),
-                TextColumn::make('company')->searchable()->sortable()->label('Īpašnieks'),
+                TextColumn::make('company')->searchable()->sortable()->label('Ražotājs'),
                 TextColumn::make('categoriesText')->label('Kategorijas'),
                 TextColumn::make('cost_per_unit')->sortable()->formatStateUsing(fn(FarmPlantProtection $record) => $record->costsText)->label('Izmaksas'),
             ])

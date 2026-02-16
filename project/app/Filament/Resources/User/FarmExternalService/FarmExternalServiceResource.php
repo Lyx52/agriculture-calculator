@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Filament\Resources\User\FarmEmployees;
+namespace App\Filament\Resources\User\FarmExternalService;
 
-use App\Filament\Resources\User\FarmEmployees\Pages\ListFarmEmployees;
-use App\Filament\Resources\User\FarmEmployees\Schemas\FarmEmployeeForm;
-use App\Filament\Resources\User\FarmEmployees\Tables\FarmEmployeesTable;
+use App\Filament\Resources\User\FarmExternalService\Pages\ListFarmExternalServices;
+use App\Filament\Resources\User\FarmExternalService\Schemas\FarmExternalServiceForm;
+use App\Filament\Resources\User\FarmExternalService\Tables\FarmExternalServiceTable;
 use App\Models\FarmEmployee;
 use BackedEnum;
 use Filament\Resources\Resource;
@@ -14,33 +14,33 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class FarmEmployeeResource extends Resource
+class FarmExternalServiceResource extends Resource
 {
     protected static ?string $model = FarmEmployee::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $navigationLabel = 'Mani darbinieki';
-    protected static ?string $breadcrumb = 'Mani darbinieki';
-    protected static ?string $pluralLabel = 'Mani darbinieki';
-    protected static ?string $modelLabel = 'Darbinieks';
-    protected static ?int $navigationSort = 2;
+    protected static ?string $navigationLabel = 'Ārējie pakalpojumi';
+    protected static ?string $breadcrumb = 'Ārējie pakalpojumi';
+    protected static ?string $pluralLabel = 'Ārējie pakalpojumi';
+    protected static ?string $modelLabel = 'Pakalpojums';
+    protected static ?int $navigationSort = 3;
     protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Schema $schema): Schema
     {
-        return FarmEmployeeForm::configure($schema);
+        return FarmExternalServiceForm::configure($schema);
     }
 
     public static function table(Table $table): Table
     {
-        return FarmEmployeesTable::configure($table);
+        return FarmExternalServiceTable::configure($table);
     }
 
     public static function getPages(): array
     {
         return [
-            'index' => ListFarmEmployees::route('/'),
+            'index' => ListFarmExternalServices::route('/'),
         ];
     }
 

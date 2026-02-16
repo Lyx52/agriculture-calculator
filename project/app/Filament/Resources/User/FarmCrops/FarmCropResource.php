@@ -22,7 +22,7 @@ class FarmCropResource extends Resource
     protected static ?string $breadcrumb = 'Kūltūraugi';
     protected static ?string $pluralLabel = 'Kūltūraugi';
     protected static ?string $modelLabel = 'Kūltūraugs';
-    protected static ?int $navigationSort = 3;
+    protected static ?int $navigationSort = 4;
     protected static ?string $recordTitleAttribute = 'name';
 
 

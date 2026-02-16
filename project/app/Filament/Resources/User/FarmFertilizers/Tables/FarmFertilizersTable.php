@@ -19,8 +19,8 @@ class FarmFertilizersTable
     {
         return $table
             ->columns([
+                TextColumn::make('contents')->searchable()->sortable()->label('Darbavielu saturs'),
                 TextColumn::make('name')->searchable()->sortable()->label('Nosaukums'),
-                TextColumn::make('company')->searchable()->sortable()->label('Īpašnieks'),
                 TextColumn::make('cost_per_unit')->sortable()->formatStateUsing(fn(FarmFertilizer $record) => $record->costsText)->label('Izmaksas'),
             ])
             ->filters([
@@ -29,21 +29,21 @@ class FarmFertilizersTable
                     ->label('Satur darbīgo vielu')
                     ->multiple()
                     ->options([
-                        'value_caco3' => "CaCO3",
-                        'value_zn' => "Zn",
-                        'value_mo' => "Mo",
-                        'value_mn' => "Mn",
-                        'value_fe' => "Fe",
-                        'value_cu' => "Cu",
-                        'value_co' => "Co",
-                        'value_b' => "B",
-                        'value_s' => "S",
-                        'value_na' => "Na",
-                        'value_mg' => "Mg",
-                        'value_ca' => "Ca",
-                        'value_k2o' => "K2O",
+                        'value_n' => "N",
                         'value_p2o5' => "P2O5",
-                        'value_n' => "N"
+                        'value_k2o' => "K2O",
+                        'value_ca' => "Ca",
+                        'value_mg' => "Mg",
+                        'value_na' => "Na",
+                        'value_s' => "S",
+                        'value_b' => "B",
+                        'value_co' => "Co",
+                        'value_cu' => "Cu",
+                        'value_fe' => "Fe",
+                        'value_mn' => "Mn",
+                        'value_mo' => "Mo",
+                        'value_zn' => "Zn",
+                        'value_caco3' => "CaCO3",
                     ])
                     ->query(function (Builder $query, SelectFilter $filter, array $data) {
                         $nutrients = $data['values'] ?? [];
