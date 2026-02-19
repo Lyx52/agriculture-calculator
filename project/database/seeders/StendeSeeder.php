@@ -76,9 +76,9 @@ class StendeSeeder extends Seeder
 
         $user->fertilizers()->createOrFirst([ 'name' => '(N)-27 (S)-4', 'owner_id' => $user->id ], [
             'owner_id' => $user->id,
-            'name' => '(N)-27 (S)-4',
+            'contents' => '(N)-27 (S)-4',
             'unit_type' => UnitType::KILOGRAMS,
-            'company' => 'YaraBela',
+            'name' => 'YaraBela',
             'cost_per_unit' => 1,
             'value_n' => 27,
             'value_s' => 4
@@ -114,6 +114,8 @@ class StendeSeeder extends Seeder
             $equipmentByName["$equipmentInstance->manufacturer $equipmentInstance->model"] = $equipmentInstance->id;
         }
 
+        $seasonIdsByName = $user->seasons()->pluck('id', 'name');
+
         $operations = collect(json_decode($disk->get('stende/operations.json')))->groupBy('farmland');
         foreach ($operations as $farmlandName => $farmlandOperations) {
             $farmland = $farmlandsByName[(string)$farmlandName];
@@ -122,10 +124,17 @@ class StendeSeeder extends Seeder
             }
             $farmland->operations()->forceDelete();
             foreach ($farmlandOperations as $operationData) {
+                $seasonId = $seasonIdsByName[$operationData->season ?? ''] ?? null;
+                if (empty($seasonId) && !empty($operationData->season)) {
+                    $seasonId = $user->seasons()->create(['name' => $operationData->season])?->id;
+                    $seasonIdsByName[$operationData->season] = $seasonId;
+                }
+
                 /** @var FarmlandOperation $operation */
                 $operation = $farmland->operations()->create([
                     'operation_date' => $operationData->operation_date,
                     'operation_code' => "operation_type_{$operationData->operation_code}",
+                    'season_id' => $seasonId,
                 ]);
                 $usedMaterials = $operationData->used_materials ?? [];
 
@@ -165,7 +174,7 @@ class StendeSeeder extends Seeder
         return match($materialData->material_type) {
             FarmPlantProtection::class => $user->plantProtectionProducts()->firstWhere('name', $materialData->name),
             FarmCrop::class => $user->crops()->firstWhere('name', $materialData->name),
-            FarmFertilizer::class => $user->fertilizers()->firstWhere('name', $materialData->name),
+            FarmFertilizer::class => $user->fertilizers()->firstWhere('contents', $materialData->name),
         };
     }
 }

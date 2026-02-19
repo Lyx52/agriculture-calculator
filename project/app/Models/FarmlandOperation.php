@@ -21,6 +21,10 @@ class FarmlandOperation extends Model
         return $this->belongsTo(Codifier::class, 'operation_code', 'code');
     }
 
+    public function season(): BelongsTo {
+        return $this->belongsTo(FarmSeason::class, 'season_id', 'id');
+    }
+
     public function farmland(): BelongsTo {
         return $this->belongsTo(Farmland::class, 'farmland_id', 'id');
     }

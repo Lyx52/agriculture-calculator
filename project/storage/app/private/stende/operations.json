@@ -1,12 +1,14 @@
 [
     {
         "operation_date": "2023-09-12",
+        "season": "2024",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120"
     },
     {
         "operation_date": "2023-09-12",
+        "season": "2024",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -27,18 +29,21 @@
     },
     {
         "operation_date": "2024-03-05",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "120"
     },
     {
         "operation_date": "2024-03-05",
+        "season": "2024",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "120"
     },
     {
         "operation_date": "2024-03-05",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -51,6 +56,7 @@
     },
     {
         "operation_date": "2024-03-05",
+        "season": "2024",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -63,6 +69,7 @@
     },
     {
         "operation_date": "2024-04-11",
+        "season": "2024",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120",
@@ -75,6 +82,7 @@
     },
     {
         "operation_date": "2024-04-11",
+        "season": "2024",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120",
@@ -87,6 +95,7 @@
     },
     {
         "operation_date": "2024-04-11",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -99,6 +108,7 @@
     },
     {
         "operation_date": "2024-04-11",
+        "season": "2024",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -111,6 +121,7 @@
     },
     {
         "operation_date": "2024-04-30",
+        "season": "2024",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -123,6 +134,7 @@
     },
     {
         "operation_date": "2024-05-01",
+        "season": "2024",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -135,6 +147,7 @@
     },
     {
         "operation_date": "2024-05-01",
+        "season": "2024",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -147,6 +160,7 @@
     },
     {
         "operation_date": "2024-05-01",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -159,6 +173,7 @@
     },
     {
         "operation_date": "2024-05-01",
+        "season": "2024",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -171,6 +186,7 @@
     },
     {
         "operation_date": "2024-05-01",
+        "season": "2024",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "131",
@@ -191,6 +207,7 @@
     },
     {
         "operation_date": "2024-05-02",
+        "season": "2024",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -221,6 +238,7 @@
     },
     {
         "operation_date": "2024-05-02",
+        "season": "2024",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -251,6 +269,7 @@
     },
     {
         "operation_date": "2024-05-02",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -281,6 +300,7 @@
     },
     {
         "operation_date": "2024-05-02",
+        "season": "2024",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -311,6 +331,7 @@
     },
     {
         "operation_date": "2024-05-23",
+        "season": "2024",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "131",
@@ -331,6 +352,7 @@
     },
     {
         "operation_date": "2024-05-23",
+        "season": "2024",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -351,6 +373,7 @@
     },
     {
         "operation_date": "2024-05-23",
+        "season": "2024",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -371,6 +394,7 @@
     },
     {
         "operation_date": "2024-05-23",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -391,6 +415,7 @@
     },
     {
         "operation_date": "2024-05-23",
+        "season": "2024",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -403,6 +428,7 @@
     },
     {
         "operation_date": "2024-05-27",
+        "season": "2024",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "150",
@@ -415,6 +441,7 @@
     },
     {
         "operation_date": "2024-05-27",
+        "season": "2024",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "150",
@@ -427,6 +454,7 @@
     },
     {
         "operation_date": "2024-05-27",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "150",
@@ -439,6 +467,7 @@
     },
     {
         "operation_date": "2024-05-27",
+        "season": "2024",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "150",
@@ -451,6 +480,7 @@
     },
     {
         "operation_date": "2024-06-05",
+        "season": "2024",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -477,6 +507,7 @@
     },
     {
         "operation_date": "2024-06-05",
+        "season": "2024",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -497,6 +528,7 @@
     },
     {
         "operation_date": "2024-06-05",
+        "season": "2024",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -523,6 +555,7 @@
     },
     {
         "operation_date": "2024-06-05",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -549,6 +582,7 @@
     },
     {
         "operation_date": "2024-08-13",
+        "season": "2024",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "182",
@@ -561,6 +595,7 @@
     },
     {
         "operation_date": "2024-08-13",
+        "season": "2024",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "182",
@@ -573,6 +608,7 @@
     },
     {
         "operation_date": "2024-08-13",
+        "season": "2024",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "182",
@@ -585,6 +621,7 @@
     },
     {
         "operation_date": "2024-08-13",
+        "season": "2024",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "182",
@@ -597,6 +634,7 @@
     },
     {
         "operation_date": "2024-08-13",
+        "season": "2024",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "182",
@@ -609,6 +647,7 @@
     },
     {
         "operation_date": "2024-11-11",
+        "season": "2025",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -621,6 +660,7 @@
     },
     {
         "operation_date": "2024-11-11",
+        "season": "2025",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -633,6 +673,7 @@
     },
     {
         "operation_date": "2024-11-11",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -645,6 +686,7 @@
     },
     {
         "operation_date": "2024-11-11",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -657,6 +699,7 @@
     },
     {
         "operation_date": "2025-03-27",
+        "season": "2025",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -669,6 +712,7 @@
     },
     {
         "operation_date": "2025-03-27",
+        "season": "2025",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -681,6 +725,7 @@
     },
     {
         "operation_date": "2025-03-27",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -693,6 +738,7 @@
     },
     {
         "operation_date": "2025-03-27",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -705,6 +751,7 @@
     },
     {
         "operation_date": "2025-04-10",
+        "season": "2025",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -725,6 +772,7 @@
     },
     {
         "operation_date": "2025-04-10",
+        "season": "2025",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -745,6 +793,7 @@
     },
     {
         "operation_date": "2025-04-10",
+        "season": "2025",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -765,6 +814,7 @@
     },
     {
         "operation_date": "2025-04-10",
+        "season": "2025",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -785,6 +835,7 @@
     },
     {
         "operation_date": "2025-04-10",
+        "season": "2025",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -805,6 +856,7 @@
     },
     {
         "operation_date": "2025-04-10",
+        "season": "2025",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -825,6 +877,7 @@
     },
     {
         "operation_date": "2025-04-10",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -845,6 +898,7 @@
     },
     {
         "operation_date": "2025-04-10",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -865,6 +919,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120",
@@ -877,6 +932,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120",
@@ -889,6 +945,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "120",
@@ -901,6 +958,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "120",
@@ -913,6 +971,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -933,6 +992,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -953,6 +1013,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -973,6 +1034,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -993,6 +1055,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -1013,6 +1076,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -1033,6 +1097,7 @@
     },
     {
         "operation_date": "2025-04-14",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -1053,6 +1118,7 @@
     },
     {
         "operation_date": "2025-04-22",
+        "season": "2025",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "131",
@@ -1079,6 +1145,7 @@
     },
     {
         "operation_date": "2025-04-22",
+        "season": "2025",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "131",
@@ -1105,6 +1172,7 @@
     },
     {
         "operation_date": "2025-04-15",
+        "season": "2025",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1125,6 +1193,7 @@
     },
     {
         "operation_date": "2025-04-15",
+        "season": "2025",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1137,6 +1206,7 @@
     },
     {
         "operation_date": "2025-04-29",
+        "season": "2025",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1149,6 +1219,7 @@
     },
     {
         "operation_date": "2025-05-12",
+        "season": "2025",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "150",
@@ -1161,6 +1232,7 @@
     },
     {
         "operation_date": "2025-05-12",
+        "season": "2025",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "150",
@@ -1173,6 +1245,7 @@
     },
     {
         "operation_date": "2025-05-12",
+        "season": "2025",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "150",
@@ -1185,6 +1258,7 @@
     },
     {
         "operation_date": "2025-05-12",
+        "season": "2025",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "150",
@@ -1197,6 +1271,7 @@
     },
     {
         "operation_date": "2025-05-12",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "150",
@@ -1209,6 +1284,7 @@
     },
     {
         "operation_date": "2025-05-12",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "150",
@@ -1221,6 +1297,7 @@
     },
     {
         "operation_date": "2025-05-21",
+        "season": "2025",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "150",
@@ -1233,6 +1310,7 @@
     },
     {
         "operation_date": "2025-05-21",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "150",
@@ -1245,6 +1323,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1271,6 +1350,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1297,6 +1377,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1323,6 +1404,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1349,6 +1431,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1375,6 +1458,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1401,6 +1485,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "7.2",
         "agriculture_technology_code": "Minimālā apstrāde",
         "operation_code": "165",
@@ -1427,6 +1512,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1459,6 +1545,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1491,6 +1578,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1523,6 +1611,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1555,6 +1644,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1587,6 +1677,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1619,6 +1710,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1651,6 +1743,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1683,6 +1776,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1715,6 +1809,7 @@
     },
     {
         "operation_date": "2025-05-24",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1747,6 +1842,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1773,6 +1869,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -1799,6 +1896,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1825,6 +1923,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1851,6 +1950,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1877,6 +1977,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -1903,6 +2004,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1929,6 +2031,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1955,6 +2058,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -1981,6 +2085,7 @@
     },
     {
         "operation_date": "2025-06-13",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -2007,6 +2112,7 @@
     },
     {
         "operation_date": "2025-08-27",
+        "season": "2025",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "182",
@@ -2018,6 +2124,7 @@
     },
     {
         "operation_date": "2025-08-27",
+        "season": "2025",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "182",
@@ -2029,6 +2136,7 @@
     },
     {
         "operation_date": "2025-08-12",
+        "season": "2025",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "182",
@@ -2040,6 +2148,7 @@
     },
     {
         "operation_date": "2025-08-12",
+        "season": "2025",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "182",
@@ -2051,6 +2160,7 @@
     },
     {
         "operation_date": "2025-08-12",
+        "season": "2025",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "182",
@@ -2062,6 +2172,7 @@
     },
     {
         "operation_date": "2025-08-12",
+        "season": "2025",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "182",
@@ -2073,6 +2184,7 @@
     },
     {
         "operation_date": "2025-08-12",
+        "season": "2025",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "182",
@@ -2084,6 +2196,7 @@
     },
     {
         "operation_date": "2025-08-12",
+        "season": "2025",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "182",
@@ -2095,6 +2208,7 @@
     },
     {
         "operation_date": "2025-08-12",
+        "season": "2025",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "182",
@@ -2106,6 +2220,7 @@
     },
     {
         "operation_date": "2025-08-12",
+        "season": "2025",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "182",
@@ -2117,6 +2232,7 @@
     },
     {
         "operation_date": "2025-09-01",
+        "season": "2026",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -2131,6 +2247,7 @@
     },
     {
         "operation_date": "2025-09-01",
+        "season": "2026",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -2145,6 +2262,7 @@
     },
     {
         "operation_date": "2025-09-12",
+        "season": "2026",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120",
@@ -2157,6 +2275,7 @@
     },
     {
         "operation_date": "2025-09-12",
+        "season": "2026",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120",
@@ -2169,6 +2288,7 @@
     },
     {
         "operation_date": "2025-09-12",
+        "season": "2026",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120",
@@ -2181,6 +2301,7 @@
     },
     {
         "operation_date": "2025-09-12",
+        "season": "2026",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "120",
@@ -2193,6 +2314,7 @@
     },
     {
         "operation_date": "2025-09-10",
+        "season": "2026",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -2205,6 +2327,7 @@
     },
     {
         "operation_date": "2025-09-10",
+        "season": "2026",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -2217,6 +2340,7 @@
     },
     {
         "operation_date": "2025-09-10",
+        "season": "2026",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -2229,6 +2353,7 @@
     },
     {
         "operation_date": "2025-09-10",
+        "season": "2026",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "110",
@@ -2241,6 +2366,7 @@
     },
     {
         "operation_date": "2025-09-22",
+        "season": "2026",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -2253,6 +2379,7 @@
     },
     {
         "operation_date": "2025-09-22",
+        "season": "2026",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -2265,6 +2392,7 @@
     },
     {
         "operation_date": "2025-09-22",
+        "season": "2026",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -2277,6 +2405,7 @@
     },
     {
         "operation_date": "2025-09-22",
+        "season": "2026",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "121",
@@ -2289,6 +2418,7 @@
     },
     {
         "operation_date": "2025-09-23",
+        "season": "2026",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -2309,6 +2439,7 @@
     },
     {
         "operation_date": "2025-09-23",
+        "season": "2026",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -2329,6 +2460,7 @@
     },
     {
         "operation_date": "2025-09-23",
+        "season": "2026",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -2349,6 +2481,7 @@
     },
     {
         "operation_date": "2025-09-23",
+        "season": "2026",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "131",
@@ -2369,6 +2502,7 @@
     },
     {
         "operation_date": "2025-09-23",
+        "season": "2026",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -2389,6 +2523,7 @@
     },
     {
         "operation_date": "2025-09-23",
+        "season": "2026",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -2409,6 +2544,7 @@
     },
     {
         "operation_date": "2025-09-23",
+        "season": "2026",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -2429,6 +2565,7 @@
     },
     {
         "operation_date": "2025-09-23",
+        "season": "2026",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "160",
@@ -2449,6 +2586,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "3.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -2475,6 +2613,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -2501,6 +2640,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -2527,6 +2667,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "135",
@@ -2553,6 +2694,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -2579,6 +2721,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -2605,6 +2748,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -2631,6 +2775,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "10.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "135",
@@ -2657,6 +2802,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "131",
@@ -2683,6 +2829,7 @@
     },
     {
         "operation_date": "2025-09-26",
+        "season": "2026",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "131",
@@ -2709,6 +2856,7 @@
     },
     {
         "operation_date": "2025-10-21",
+        "season": "2026",
         "farmland": "1.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -2735,6 +2883,7 @@
     },
     {
         "operation_date": "2025-10-21",
+        "season": "2026",
         "farmland": "2.2",
         "agriculture_technology_code": "direct_sowing",
         "operation_code": "165",
@@ -2761,6 +2910,7 @@
     },
     {
         "operation_date": "2025-10-21",
+        "season": "2026",
         "farmland": "4.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -2787,6 +2937,7 @@
     },
     {
         "operation_date": "2025-10-21",
+        "season": "2026",
         "farmland": "5.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -2813,6 +2964,7 @@
     },
     {
         "operation_date": "2025-10-21",
+        "season": "2026",
         "farmland": "6.2",
         "agriculture_technology_code": "minimal_processing",
         "operation_code": "165",
@@ -2839,6 +2991,7 @@
     },
     {
         "operation_date": "2025-10-21",
+        "season": "2026",
         "farmland": "7.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -2865,6 +3018,7 @@
     },
     {
         "operation_date": "2025-10-21",
+        "season": "2026",
         "farmland": "8.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -2891,6 +3045,7 @@
     },
     {
         "operation_date": "2025-10-21",
+        "season": "2026",
         "farmland": "9.2",
         "agriculture_technology_code": "plowing",
         "operation_code": "165",
@@ -2912,6 +3067,1049 @@
             {
                 "equipment": "Deutz-Fahr Agrotron 100",
                 "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-22",
+        "season": "2025",
+        "farmland": "1.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "131",
+        "used_equipment": [
+            {
+                "equipment": "Case MX 240",
+                "attachment": "Amazone Primera DMC 6000-2C"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-15",
+        "season": "2025",
+        "farmland": "1.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "1.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "1.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "1.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "1.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-22",
+        "season": "2025",
+        "farmland": "2.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "131",
+        "used_equipment": [
+            {
+                "equipment": "Case MX 240",
+                "attachment": "Amazone Primera DMC 6000-2C"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-15",
+        "season": "2025",
+        "farmland": "2.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-29",
+        "season": "2025",
+        "farmland": "2.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-12",
+        "season": "2025",
+        "farmland": "2.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "2.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "2.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "2.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "2.1",
+        "agriculture_technology_code": "direct_sowing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-10",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-14",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-12",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-21",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "3.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-10",
+        "season": "2025",
+        "farmland": "4.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "season": "2025",
+        "farmland": "4.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-14",
+        "season": "2025",
+        "farmland": "4.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-12",
+        "season": "2025",
+        "farmland": "4.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "4.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "4.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "4.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "4.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-10",
+        "season": "2025",
+        "farmland": "5.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-14",
+        "season": "2025",
+        "farmland": "5.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-12",
+        "season": "2025",
+        "farmland": "5.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "5.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "5.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "5.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "5.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-10",
+        "season": "2025",
+        "farmland": "6.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-14",
+        "season": "2025",
+        "farmland": "6.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "135",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "6.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "6.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "6.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "6.1",
+        "agriculture_technology_code": "minimal_processing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-11-11",
+        "season": "2025",
+        "farmland": "7.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-03-27",
+        "season": "2025",
+        "farmland": "7.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-10",
+        "season": "2025",
+        "farmland": "7.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-14",
+        "season": "2025",
+        "farmland": "7.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "7.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "7.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "7.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "7.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-11-11",
+        "season": "2025",
+        "farmland": "8.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-03-27",
+        "season": "2025",
+        "farmland": "8.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-10",
+        "season": "2025",
+        "farmland": "8.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-14",
+        "season": "2025",
+        "farmland": "8.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Amazone CombiDisc 3000"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "8.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "8.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "8.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "8.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-11-11",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-03-27",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-10",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-12",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-14",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Amazone CombiDisc 3000"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "9.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
+            }
+        ]
+    },
+    {
+        "operation_date": "2024-11-11",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "110",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 160",
+                "attachment": "Kuhn Vari-Master 123 4ENSM"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-03-27",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "121",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic",
+                "attachment": "Šļuce S-8m"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-10",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "160",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone ZA-M 1201"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-04-14",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "120",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic",
+                "attachment": "Lemken Rubin 10/300"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-12",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-21",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "150",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Einbock Aerostar-rotation 600"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-14",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "135",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 130",
+                "attachment": "Amazone CombiDisc 3000"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-05-24",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-06-13",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "165",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "Amazone UF901"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "182",
+        "used_equipment": [
+            {
+                "equipment": "Wintersteiger Classic"
+            }
+        ]
+    },
+    {
+        "operation_date": "2025-08-27",
+        "season": "2025",
+        "farmland": "10.1",
+        "agriculture_technology_code": "plowing",
+        "operation_code": "221",
+        "used_equipment": [
+            {
+                "equipment": "Deutz-Fahr Agrotron 100",
+                "attachment": "LMR Agro LMR-9"
             }
         ]
     }

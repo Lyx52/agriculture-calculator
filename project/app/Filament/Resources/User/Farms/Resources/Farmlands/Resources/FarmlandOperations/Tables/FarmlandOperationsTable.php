@@ -10,10 +10,13 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\RestoreAction;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Select;
 use Filament\Support\Colors\Color;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TrashedFilter;
+use Filament\Tables\Grouping\Group;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -22,6 +25,12 @@ class FarmlandOperationsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->groups([
+                Group::make('season.name')
+                    ->collapsible()
+                    ->label('Sezona'),
+            ])
+            ->defaultGroup('season.name')
             ->defaultSort('operation_date')
             ->columns([
                 TextColumn::make('operation_date')->sortable()->formatStateUsing(fn(Carbon $state) => $state->formatted())->label('Datums'),
@@ -55,6 +64,9 @@ class FarmlandOperationsTable
                                 fn(Builder $query) => $query->whereDate('operation_date', '<=', $data['date_to'])
                             );
                     }),
+                SelectFilter::make('season_id')
+                    ->label('Sezona')
+                    ->options(user()->seasons()->pluck('name', 'id'))
             ])
             ->filtersApplyAction(function (Action $action) {
                 return $action->label('Filtrēt');

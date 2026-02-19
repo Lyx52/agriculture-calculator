@@ -181,7 +181,7 @@ class CreateImportsFromXlsx extends Command
             $costPerUnit = floatval($row[6] ?? 1);
 
             $imports[] = [
-                'name' => $fertilizerName,
+                'contents' => $fertilizerName,
                 'unit_type' => $unitType,
                 'cost_per_unit' => round($costPerUnit, 2),
                 'value_caco3' => floatval($row[21] ?? 0),
@@ -199,7 +199,7 @@ class CreateImportsFromXlsx extends Command
                 'value_k2o' => floatval($row[9] ?? 0),
                 'value_p2o5' => floatval($row[8] ?? 0),
                 'value_n' => floatval($row[7] ?? 0),
-                'company' => $companyName,
+                'name' => $companyName,
             ];
         }
 

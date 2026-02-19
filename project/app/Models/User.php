@@ -61,6 +61,11 @@ class User extends Authenticatable implements FilamentUser
         };
     }
 
+    public function seasons(): HasMany
+    {
+        return $this->hasMany(FarmSeason::class, 'owner_id', 'id');
+    }
+
     public function farms(): HasMany
     {
         return $this->hasMany(Farm::class, 'owner_id', 'id');

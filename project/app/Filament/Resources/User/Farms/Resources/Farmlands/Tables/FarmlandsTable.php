@@ -28,11 +28,13 @@ class FarmlandsTable
             ->columns([
                 TextColumn::make('name')
                     ->label('Nosaukums')
+                    ->sortable()
                     ->searchable(),
                 TextColumn::make('latestCropName')
                     ->label('Pēdējais iesētais kūltūraugs')
                     ->searchable(),
                 TextColumn::make('area')
+                    ->sortable()
                     ->label('Zemes platība, ha'),
             ])
             ->filters([

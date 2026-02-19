@@ -10,9 +10,12 @@ use App\Models\FarmCrop;
 use App\Models\FarmEmployee;
 use App\Models\FarmFertilizer;
 use App\Models\FarmPlantProtection;
+use Carbon\Carbon;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
@@ -39,6 +42,21 @@ class FarmlandOperationForm
                     ->label('Darbinieks / Ārējais pakalpojumu sniedzējs')
                     ->options($user->employees->pluck('fullNameWithType', 'id'))
                     ->searchable(),
+                Select::make('season_id')
+                    ->native(false)
+                    ->relationship('season', 'name')
+                    ->createOptionModalHeading('Izveidot jaunu sezonu')
+                    ->createOptionForm([
+                        TextInput::make('name')
+                            ->label('Sezonas gads')
+                            ->default(Carbon::now()->year)
+                            ->minValue(1900)
+                            ->maxValue(2100)
+                            ->integer()
+                            ->required(),
+                        Hidden::make('owner_id')
+                            ->default(auth()->id())
+                    ]),
                 Repeater::make('equipmentInput')
                     ->label('Izmantotā tehnika')
                     ->relationship('operationEquipment')
