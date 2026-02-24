@@ -43,6 +43,7 @@ class FarmlandOperationForm
                     ->options($user->employees->pluck('fullNameWithType', 'id'))
                     ->searchable(),
                 Select::make('season_id')
+                    ->label('Sezona')
                     ->native(false)
                     ->relationship('season', 'name')
                     ->createOptionModalHeading('Izveidot jaunu sezonu')
@@ -53,6 +54,10 @@ class FarmlandOperationForm
                             ->minValue(1900)
                             ->maxValue(2100)
                             ->integer()
+                            ->rule('unique:farm_seasons,name')
+                            ->validationMessages([
+                                'unique' => 'Šada sezona jau eksistē'
+                            ])
                             ->required(),
                         Hidden::make('owner_id')
                             ->default(auth()->id())

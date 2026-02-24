@@ -68,6 +68,23 @@
         "specific_fuel_consumption": 0.27
     },
     {
+        "manufacturer": "Claas",
+        "model": "Axion 820",
+        "equipment_category_code": "tractor",
+        "equipment_sub_category_code": null,
+        "purchased_date": "2021-01-01",
+        "price": 60000,
+        "is_self_propelled": false,
+        "drive_type": "drive_mfwd",
+        "work_amount": null,
+        "work_amount_type": null,
+        "weight": 9460,
+        "required_power": null,
+        "power": 167,
+        "working_speed": null,
+        "specific_fuel_consumption": 0.27
+    },
+    {
         "manufacturer": "Wintersteiger",
         "model": "Classic",
         "equipment_category_code": "razas_novaksanas_tehnika",
@@ -153,6 +170,23 @@
         "specific_fuel_consumption": null
     },
     {
+        "manufacturer": "InterTech",
+        "model": "IT 4.0",
+        "equipment_category_code": "augsnes_apstrades_tehnika_un_iekartas",
+        "equipment_sub_category_code": "diski",
+        "purchased_date": "2024-01-01",
+        "price": 15000,
+        "is_self_propelled": false,
+        "drive_type": null,
+        "work_amount": 4,
+        "work_amount_type": "meters",
+        "weight": 1570,
+        "required_power": 110,
+        "power": null,
+        "working_speed": 12,
+        "specific_fuel_consumption": null
+    },
+    {
         "manufacturer": "Amazone",
         "model": "UF901",
         "equipment_category_code": "meslosanas_un_augu_aizsardzibas_tehnika",
@@ -218,6 +252,23 @@
         "required_power": 48,
         "power": null,
         "working_speed": 15,
+        "specific_fuel_consumption": null
+    },
+    {
+        "manufacturer": "Multiva",
+        "model": "ForteFX400",
+        "equipment_category_code": "sejas_un_stadama_tehnika",
+        "equipment_sub_category_code": "sejmasina",
+        "purchased_date": "2021-01-01",
+        "price": 35000,
+        "is_self_propelled": false,
+        "drive_type": null,
+        "work_amount": 4,
+        "work_amount_type": "meters",
+        "weight": 5500,
+        "required_power": 110,
+        "power": null,
+        "working_speed": 8,
         "specific_fuel_consumption": null
     },
     {

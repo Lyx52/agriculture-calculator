@@ -74,6 +74,17 @@ class StendeSeeder extends Seeder
             'cost_per_unit' => 10
         ]);
 
+        $user->fertilizers()->createOrFirst([ 'name' => 'NPK (16-15-15)', 'owner_id' => $user->id ], [
+            'owner_id' => $user->id,
+            'contents' => 'NPK (16-15-15)',
+            'unit_type' => UnitType::KILOGRAMS,
+            'name' => 'YaraBela',
+            'cost_per_unit' => 1,
+            'value_n' => 16,
+            'value_p2o5' => 15,
+            'value_k2o' => 15
+        ]);
+
         $user->fertilizers()->createOrFirst([ 'name' => '(N)-27 (S)-4', 'owner_id' => $user->id ], [
             'owner_id' => $user->id,
             'contents' => '(N)-27 (S)-4',
