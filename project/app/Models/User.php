@@ -95,4 +95,9 @@ class User extends Authenticatable implements FilamentUser
     {
         return $this->hasMany(FarmAgricultureEquipment::class, 'owner_id', 'id');
     }
+
+    public function otherMaterials(): HasMany
+    {
+        return $this->hasMany(FarmOtherMaterial::class, 'owner_id', 'id');
+    }
 }

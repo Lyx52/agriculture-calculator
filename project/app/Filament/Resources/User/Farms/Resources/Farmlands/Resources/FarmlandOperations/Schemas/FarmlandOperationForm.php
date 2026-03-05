@@ -4,11 +4,13 @@ namespace App\Filament\Resources\User\Farms\Resources\Farmlands\Resources\Farmla
 
 use App\Enums\DefinedCodifiers;
 use App\Enums\MaterialAmountType;
+use App\Enums\OtherMaterialType;
 use App\Models\Codifier;
 use App\Models\FarmAgricultureEquipment;
 use App\Models\FarmCrop;
 use App\Models\FarmEmployee;
 use App\Models\FarmFertilizer;
+use App\Models\FarmOtherMaterial;
 use App\Models\FarmPlantProtection;
 use Carbon\Carbon;
 use Filament\Forms\Components\DatePicker;
@@ -99,9 +101,17 @@ class FarmlandOperationForm
                                 FarmCrop::class => 'Kūltūrauga sēkla',
                                 FarmPlantProtection::class => 'Augu aizsardzības līdzekļi',
                                 FarmFertilizer::class => 'Minerālmēsli',
+                                FarmOtherMaterial::class => 'Citi materiāli',
                             ]),
+                        Select::make('other_material_type')
+                            ->label('Materiāla tips')
+                            ->live()
+                            ->visible(fn(Get $get) => $get('material_type') == FarmOtherMaterial::class)
+                            ->options(OtherMaterialType::class)
+                            ->native(false),
                         Select::make('material_id')
                             ->required()
+                            ->visible(fn(Get $get) => $get('material_type') != FarmOtherMaterial::class)
                             ->label(fn(Get $get) => match($get('material_type')) {
                                 FarmPlantProtection::class => 'Augu aizsardzības līdzeklis',
                                 FarmCrop::class => 'Kūltūraugs',
@@ -144,6 +154,7 @@ class FarmlandOperationForm
                             ->options(fn (Get $get): string|array => match($get('material_type')) {
                                 FarmPlantProtection::class => FarmPlantProtection::find($get('material_id'))?->unit_type?->amountOptions() ?? MaterialAmountType::class,
                                 FarmFertilizer::class => FarmFertilizer::find($get('material_id'))?->unit_type?->amountOptions() ?? MaterialAmountType::class,
+                                FarmOtherMaterial::class => $get('other_material_type')?->amountOptions() ?? MaterialAmountType::class,
                                 default => FarmCrop::find($get('material_id'))?->unit_type?->amountOptions() ?? MaterialAmountType::class,
                             })
                             ->native(false),
