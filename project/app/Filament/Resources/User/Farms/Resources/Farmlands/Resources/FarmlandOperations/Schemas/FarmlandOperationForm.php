@@ -68,6 +68,7 @@ class FarmlandOperationForm
                     ->label('Izmantotā tehnika')
                     ->relationship('operationEquipment')
                     ->orderColumn(false)
+                    ->defaultItems(0)
                     ->addActionLabel('Pievienot tehniku')
                     ->schema([
                         Select::make('equipment_id')
@@ -90,6 +91,7 @@ class FarmlandOperationForm
                     ->label('Izmantotie materiāli')
                     ->relationship('materials')
                     ->orderColumn(false)
+                    ->defaultItems(0)
                     ->addActionLabel('Pievienot materiālu')
                     ->schema([
                         Select::make('material_type')
@@ -121,7 +123,10 @@ class FarmlandOperationForm
                             ->getSearchResultsUsing(fn (string $search, Get $get) => match($get('material_type')) {
                                 FarmPlantProtection::class => $user->plantProtectionProducts()
                                     ->limit(20)
-                                    ->when(!empty($search), fn($query) => $query->whereLike('name', "%$search%"))
+                                    ->when(!empty($search), fn($query) => $query
+                                        ->whereLike('name', "%$search%")
+                                        ->orWhereLike('company', "%$search%")
+                                    )
                                     ->pluck('name', 'id'),
                                 FarmCrop::class => $user->crops()
                                     ->limit(20)
@@ -133,9 +138,9 @@ class FarmlandOperationForm
                                     ->pluck('name', 'id'),
                             })
                             ->options(fn (Get $get) => match($get('material_type')) {
-                                FarmPlantProtection::class => $user->plantProtectionProducts->pluck('name', 'id'),
+                                FarmPlantProtection::class => $user->plantProtectionProducts->pluck('productFullName', 'id'),
                                 FarmCrop::class => $user->crops->pluck('cropName', 'id'),
-                                FarmFertilizer::class => $user->fertilizers->pluck('name', 'id'),
+                                FarmFertilizer::class => $user->fertilizers->pluck('fertilizerName', 'id'),
                             })
                             ->preload()
                             ->getOptionLabelUsing(fn ($value, Get $get): ?string => match($get('material_type')) {

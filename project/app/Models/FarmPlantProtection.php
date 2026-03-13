@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\DefinedCodifiers;
 use App\Enums\UnitType;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
@@ -28,8 +29,9 @@ class FarmPlantProtection extends Model
     }
 
     public function categoriesText(): Attribute {
+        static $plantProtections = Codifier::whereParentCode(DefinedCodifiers::CROP_PROTECTION_USAGE)->pluck('name', 'code');
         return new Attribute(fn() =>
-            Codifier::query()->whereIn('code', $this->protection_category_codes)->pluck('name')->join(', ')
+            collect($this->protection_category_codes)->map(fn($item) => $plantProtections->get($item, ''))->join(', ')
         );
     }
 
@@ -39,5 +41,9 @@ class FarmPlantProtection extends Model
 
     public function productName(): Attribute {
         return new Attribute(fn() => "$this->name ({$this->categoriesText})");
+    }
+
+    public function productFullName(): Attribute {
+        return new Attribute(fn() => "$this->name ($this->company, $this->categoriesText)");
     }
 }

@@ -25,4 +25,8 @@ class FarmFertilizer extends Model
     public function costsText(): Attribute {
         return new Attribute(fn() => "$this->cost_per_unit EUR/{$this->unit_type->getLabel()}");
     }
+
+    public function fertilizerName(): Attribute {
+        return new Attribute(fn() => "$this->name ($this->contents)");
+    }
 }
