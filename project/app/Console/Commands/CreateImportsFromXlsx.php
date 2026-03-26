@@ -82,6 +82,7 @@ class CreateImportsFromXlsx extends Command
         /** @var Collection $cropProtectionUsage */
         $cropProtectionUsage = Codifier::whereParentCode(DefinedCodifiers::CROP_PROTECTION_USAGE)->pluck('code', 'name');
         $imports = [];
+        $hash = Str::uuid();
         foreach ($this->readXlsx('augu_aizsardzibas_lidzekli.xlsx') as $row) {
             $protectionName = $row[0];
             if (empty($protectionName)) {
@@ -119,6 +120,7 @@ class CreateImportsFromXlsx extends Command
             'import_type' => DefaultImports::CROP_PROTECTION,
             'imports' => $imports,
             'model_type' => FarmPlantProtection::class,
+            'sync_hash' => $hash,
         ]);
     }
 
@@ -138,6 +140,7 @@ class CreateImportsFromXlsx extends Command
         //0 = "Sugas nosaukums"
         $cropSpecies = Codifier::whereParentCode(DefinedCodifiers::CROP_SPECIES)->pluck('code', 'name');
         $imports = [];
+        $hash = Str::uuid();
         foreach ($this->readXlsx('skirnu_katalogs.xlsx') as $row) {
             $speciesName = $row[0];
             if (!$cropSpecies->has($speciesName)) {
@@ -160,11 +163,13 @@ class CreateImportsFromXlsx extends Command
             'import_type' => DefaultImports::CROP_SPECIES,
             'imports' => $imports,
             'model_type' => FarmCrop::class,
+            'sync_hash' => $hash,
         ]);
     }
 
     private function createFertilizerDefaults() {
         $imports = [];
+        $hash = Str::uuid();
         foreach ($this->readXlsx('mineralmeslojums.xlsx') as $row) {
             $fertilizerName = $row[2];
             $companyName = $row[1] ?? '';
@@ -207,6 +212,7 @@ class CreateImportsFromXlsx extends Command
             'import_type' => DefaultImports::FERTILIZERS,
             'imports' => $imports,
             'model_type' => FarmFertilizer::class,
+            'sync_hash' => $hash,
         ]);
     }
 }
