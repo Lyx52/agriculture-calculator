@@ -2,8 +2,12 @@
 
 namespace App\Filament\Pages\Admin;
 
+use App\Console\Commands\ImportUserDefaults;
 use App\Enums\CropProtectionColumn;
 use App\Enums\DefaultImports;
+use App\Enums\FertilizerColumn;
+use App\Jobs\ImportDefaultModelsJob;
+use App\Jobs\ImportUserDefaultsJob;
 use BackedEnum;
 use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
@@ -22,7 +26,12 @@ use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Icons\Heroicon;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Reader\Exception\ReaderNotOpenedException;
 use OpenSpout\Reader\XLSX\Reader;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use UnitEnum;
@@ -37,7 +46,8 @@ class UploadUserDefaults extends Page implements HasForms
     public array $data = [
         'column_options' => [],
         'header_row' => 1,
-        'uploaded_file' => null
+        'uploaded_file' => null,
+        'default_type' => null,
     ];
 
     public function mount(): void
@@ -46,11 +56,15 @@ class UploadUserDefaults extends Page implements HasForms
     }
 
     public function create() {
-        /** @var Form $form */
-        $form = $this->form;
-       $x = 1;
+        $filePath = $this->data['uploaded_file'];
+        $headerRow = $this->data['header_row'] ?? 1;
+        $defaultType = $this->data['default_type'] ?? null;
+        $columns = $this->data['columns'];
+        if (empty($filePath) || empty($defaultType)) {
+            return;
+        }
 
-
+        ImportDefaultModelsJob::dispatch($filePath, $headerRow, $defaultType, $columns);
     }
 
     public function form(Schema $schema): Schema
@@ -62,7 +76,7 @@ class UploadUserDefaults extends Page implements HasForms
                     ->numeric()
                     ->default(1)
                     ->live()
-                    ->afterStateUpdated(fn (Set $set, Get $get) => $this->updateHeaderColumns($get('defaults_file'), $get, $set))
+                    ->afterStateUpdated(fn (Set $set, Get $get) => $this->updateHeaderColumns($get, $set))
                     ->suffixAction(function (Get $get) {
                         $fileName = match($get('default_type')) {
                             DefaultImports::CROP_PROTECTION => 'augu_aizsardzibas_lidzekli.xlsx',
@@ -80,12 +94,15 @@ class UploadUserDefaults extends Page implements HasForms
 
                 FileUpload::make('defaults_file')
                     ->label('Excel fails')
-                    ->acceptedFileTypes([
-                        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                        'application/vnd.ms-excel'
-                    ])
+                    ->acceptedFileTypes(['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'])
                     ->live()
-                    ->afterStateUpdated(fn ($state, Set $set, Get $get) => $this->updateHeaderColumns($state, $get, $set)),
+                    ->afterStateUpdated(function ($state, Set $set, Get $get) {
+                        if ($state instanceof TemporaryUploadedFile) {
+                            $set('uploaded_file', $state->path());
+                        }
+
+                        $this->updateHeaderColumns($get, $set);
+                    }),
 
                 Select::make('default_type')
                     ->live()
@@ -112,7 +129,7 @@ class UploadUserDefaults extends Page implements HasForms
                     ->columns(1)
                     ->live()
                     ->visible(fn(Get $get) => $get('default_type') == DefaultImports::FERTILIZERS)
-                    ->schema($this->createColumnBuilderSchema(CropProtectionColumn::class)),
+                    ->schema($this->createColumnBuilderSchema(FertilizerColumn::class)),
             ])
         ]);
     }
@@ -146,13 +163,15 @@ class UploadUserDefaults extends Page implements HasForms
         return Storage::disk('local')->download($fileName);
     }
 
-    public function updateHeaderColumns(?Temp$state, Get $get, Set $set) {
-        if (empty($state)) {
+    public function updateHeaderColumns(Get $get, Set $set) {
+        $filePath = $get('uploaded_file');
+        if (empty($filePath)) {
+            $set('column_options', []);
             return;
         }
 
         $reader = new Reader();
-        $reader->open($state->path());
+        $reader->open($filePath);
         $sheet = $reader->getSheetIterator()->current();
         $header = null;
         $headerRow = $get('header_row') ?? 1;

@@ -19,19 +19,19 @@ if (!function_exists('generate_fertilizer_name')) {
         $hasK = $k > 0;
 
         if ($hasN && $hasP && $hasK) {
-            $parts[] = "NPK ($n-$p-$k)";
+            $parts[] = "NPK $n-$p-$k";
         } elseif (!$hasN && $hasP && $hasK) {
-            $parts[] = "PK ($p-$k)";
+            $parts[] = "PK $p-$k";
         } elseif (!$hasN && $hasP && !$hasK) {
-            $parts[] = "(P)-$p";
+            $parts[] = "P-$p";
         } elseif (!$hasN && !$hasP && $hasK) {
-            $parts[] = "(K)-$k";
+            $parts[] = "K-$k";
         } elseif ($hasN && $hasP && !$hasK) {
-            $parts[] = "NP ($n-$p)";
+            $parts[] = "NP $n-$p";
         } elseif ($hasN && !$hasP && $hasK) {
-            $parts[] = "NK ($n-$k)";
+            $parts[] = "NK $n-$k";
         } elseif ($hasN && !$hasP && !$hasK) {
-            $parts[] = "(N)-$n";
+            $parts[] = "N-$n";
         }
 
         $microMap = [
@@ -43,7 +43,7 @@ if (!function_exists('generate_fertilizer_name')) {
         foreach ($microMap as $fieldName => $label) {
             $value = floatval($data[$fieldName] ?? 0);
             if ($value > 0) {
-                $parts[] = "($label)-$value";
+                $parts[] = "$label-$value";
             }
         }
 
