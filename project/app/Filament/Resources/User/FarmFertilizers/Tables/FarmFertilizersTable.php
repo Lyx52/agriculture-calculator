@@ -18,6 +18,7 @@ class FarmFertilizersTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->query(user()->fertilizers()->getQuery())
             ->columns([
                 TextColumn::make('contents')->searchable()->sortable()->label('Darbavielu saturs'),
                 TextColumn::make('name')->searchable()->sortable()->label('Nosaukums'),

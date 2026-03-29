@@ -17,6 +17,7 @@ class FarmAgricultureEquipmentTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->query(user()->equipment()->getQuery())
             ->columns([
                 TextColumn::make('category.name')->sortable()->label('Tehnikas kategorija'),
                 TextColumn::make('manufacturer')->sortable()->searchable()->label('Marka'),
