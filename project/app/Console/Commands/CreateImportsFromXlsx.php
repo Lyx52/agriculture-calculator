@@ -2,9 +2,10 @@
 
 namespace App\Console\Commands;
 
-use App\Enums\CostType;
+use App\Enums\CropProtectionColumns;
 use App\Enums\DefaultImports;
 use App\Enums\DefinedCodifiers;
+use App\Enums\FertilizerColumns;
 use App\Enums\UnitType;
 use App\Models\Codifier;
 use App\Models\FarmCrop;
@@ -13,7 +14,6 @@ use App\Models\FarmPlantProtection;
 use App\Models\UserDefaultImports;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use OpenSpout\Reader\XLSX\Options;
@@ -46,7 +46,7 @@ class CreateImportsFromXlsx extends Command
         $this->createCropsDefault();
     }
 
-    private function readXlsx(string $fileName): array {
+    private function readXlsx(string $fileName, bool $withHeader = false): array {
         $options = new Options();
         $reader = new Reader($options);
         $disk = Storage::disk('local');
@@ -55,7 +55,7 @@ class CreateImportsFromXlsx extends Command
         $rows = [];
         foreach ($reader->getSheetIterator() as $sheet) {
             foreach ($sheet->getRowIterator() as $idx => $row) {
-                if ($idx === 1) {
+                if ($idx === 1 && !$withHeader) {
                     continue;
                 }
 
@@ -71,14 +71,6 @@ class CreateImportsFromXlsx extends Command
     }
 
     private function createCropProtectionDefault() {
-        //6 = "Termiņš"
-        //5 = "Darb.viela."
-        //4 = "Kl."
-        //3 = "Nr"
-        //2 = "Īpašnieks"
-        //1 = "Kat."
-        //0 = "Nosaukums"
-
         /** @var Collection $cropProtectionUsage */
         $cropProtectionUsage = Codifier::whereParentCode(DefinedCodifiers::CROP_PROTECTION_USAGE)->pluck('code', 'name');
         $imports = [];
@@ -107,12 +99,12 @@ class CreateImportsFromXlsx extends Command
             }
 
             $imports[] = [
-                'company' => $companyName,
-                'description' => $description,
-                'name' => $protectionName,
-                'protection_category_codes' => collect($categoriesCodes)->unique()->toArray(),
-                'unit_type' => $row[7],
-                'cost_per_unit' => floatval($row[8]), // Varbūt jādabu no kādas datubāzes
+                CropProtectionColumns::COMPANY->value => $companyName,
+                CropProtectionColumns::DESCRIPTION->value => $description,
+                CropProtectionColumns::NAME->value => $protectionName,
+                CropProtectionColumns::PROTECTION_CATEGORY_CODES->value => collect($categoriesCodes)->unique()->toArray(),
+                CropProtectionColumns::UNIT_TYPE->value => $row[7],
+                CropProtectionColumns::COST_PER_UNIT->value => floatval($row[8]),
             ];
         }
 
@@ -170,10 +162,14 @@ class CreateImportsFromXlsx extends Command
     private function createFertilizerDefaults() {
         $imports = [];
         $hash = Str::uuid();
-        foreach ($this->readXlsx('mineralmeslojums.xlsx') as $row) {
-            $fertilizerName = $row[2];
-            $companyName = $row[1] ?? '';
-            if (empty($fertilizerName)) {
+        $header = null;
+        foreach ($this->readXlsx('mineralmeslojums.xlsx', true) as $row) {
+            if (empty($header)) {
+                $header = array_flip(array_map('strtolower', array_map('trim', $row)));
+                continue;
+            }
+
+            if (empty($row[$header[FertilizerColumns::NAME->value]])) {
                 continue;
             }
 
@@ -183,29 +179,19 @@ class CreateImportsFromXlsx extends Command
                 continue;
             }
 
-            $costPerUnit = floatval($row[6] ?? 1);
-
-            $imports[] = [
-                'contents' => $fertilizerName,
-                'unit_type' => $unitType,
-                'cost_per_unit' => round($costPerUnit, 2),
-                'value_caco3' => floatval($row[21] ?? 0),
-                'value_zn' => floatval($row[20] ?? 0),
-                'value_mo' => floatval($row[19] ?? 0),
-                'value_mn' => floatval($row[18] ?? 0),
-                'value_fe' => floatval($row[17] ?? 0),
-                'value_cu' => floatval($row[16] ?? 0),
-                'value_co' => floatval($row[15] ?? 0),
-                'value_b' => floatval($row[14] ?? 0),
-                'value_s' => floatval($row[13] ?? 0),
-                'value_na' => floatval($row[12] ?? 0),
-                'value_mg' => floatval($row[11] ?? 0),
-                'value_ca' => floatval($row[10] ?? 0),
-                'value_k2o' => floatval($row[9] ?? 0),
-                'value_p2o5' => floatval($row[8] ?? 0),
-                'value_n' => floatval($row[7] ?? 0),
-                'name' => $companyName,
+            $values = [
+                FertilizerColumns::NAME->value => trim($row[$header[FertilizerColumns::NAME->value]]),
+                FertilizerColumns::COMPANY->value => trim($row[$header[FertilizerColumns::COMPANY->value]]),
+                FertilizerColumns::CONTENTS->value => trim($row[$header[FertilizerColumns::CONTENTS->value]]),
+                FertilizerColumns::UNIT_TYPE->value => UnitType::KILOGRAMS,
+                FertilizerColumns::COST_PER_UNIT->value => 10,
             ];
+
+            foreach (FertilizerColumns::contentsColumns() as $column) {
+                $values[$column->value] = floatval($row[$header[$column->value]] ?? 0);
+            }
+
+            $imports[] = $values;
         }
 
         UserDefaultImports::create([

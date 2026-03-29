@@ -38,6 +38,7 @@ class ImportUserDefaultsJob implements ShouldQueue
                 $importModel::create([
                     ...$record,
                     'owner_id' => $user->id,
+                    'sync_hash' => $import->sync_hash
                 ]);
             }
         });

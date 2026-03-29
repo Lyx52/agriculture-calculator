@@ -6,12 +6,14 @@ use Illuminate\Contracts\Support\Htmlable;
 enum UnitType: string implements HasLabel {
     case LITERS = 'l';
     case KILOGRAMS = 'kg';
+    case GRAMS = 'g';
 
     public function getLabel(): string|Htmlable|null
     {
         return match ($this) {
             self::LITERS => "l",
             self::KILOGRAMS => "kg",
+            self::GRAMS => 'g',
         };
     }
 
@@ -24,6 +26,10 @@ enum UnitType: string implements HasLabel {
             self::KILOGRAMS =>  [
                 MaterialAmountType::KILOGRAMS_PER_HECTARE->value => MaterialAmountType::KILOGRAMS_PER_HECTARE->getLabel(),
                 MaterialAmountType::KILOGRAMS_TOTAL->value => MaterialAmountType::KILOGRAMS_TOTAL->getLabel(),
+            ],
+            self::GRAMS => [
+                MaterialAmountType::GRAMS_PER_HECTARE->value => MaterialAmountType::GRAMS_PER_HECTARE->getLabel(),
+                MaterialAmountType::GRAMS_TOTAL->value => MaterialAmountType::GRAMS_TOTAL->getLabel(),
             ]
         };
     }

@@ -29,7 +29,6 @@ class CodifierSeeder extends Seeder
                             ['code' => "crop_species_$id", 'parent_id' => $parent->id],
                             ['code' => "crop_species_$id", 'parent_id' => $parent->id, 'name' => $label]
                         );
-
                     }
                 } break;
                 case DefinedCodifiers::CROP_PROTECTION_USAGE: {

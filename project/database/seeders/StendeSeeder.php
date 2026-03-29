@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Enums\DefinedCodifiers;
 use App\Enums\UnitType;
+use App\Jobs\ImportUserDefaultsJob;
 use App\Models\Farm;
 use App\Models\FarmCrop;
 use App\Models\FarmFertilizer;
@@ -29,6 +30,12 @@ class StendeSeeder extends Seeder
             'email' => 'stende@lbtu.lv',
             'password' => bcrypt('stende'),
         ]);
+
+        $user->plantProtectionProducts()->whereNotNull('sync_hash')->forceDelete();
+        $user->crops()->whereNotNull('sync_hash')->forceDelete();
+        $user->fertilizers()->whereNotNull('sync_hash')->forceDelete();
+
+        ImportUserDefaultsJob::dispatchSync($user);
 
         $user->plantProtectionProducts()->createOrFirst([ 'name' => 'NPK 7-20-30', 'owner_id' => $user->id ], [
             'owner_id' => $user->id,

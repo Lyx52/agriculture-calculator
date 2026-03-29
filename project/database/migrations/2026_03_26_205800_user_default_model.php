@@ -16,10 +16,15 @@ return new class extends Migration
             $table->string('sync_hash')->nullable();
         });
 
-        Schema::create('user_default_models', function (Blueprint $table) {
-            $table->id();
-            $table->json('model');
-            $table->string('model_type');
+        Schema::table('farm_crops', function (Blueprint $table) {
+            $table->string('sync_hash')->nullable();
+        });
+
+        Schema::table('farm_plant_protections', function (Blueprint $table) {
+            $table->string('sync_hash')->nullable();
+        });
+
+        Schema::table('user_default_imports', function (Blueprint $table) {
             $table->string('sync_hash');
         });
     }
@@ -34,6 +39,16 @@ return new class extends Migration
             $table->dropColumn('sync_hash');
         });
 
-        Schema::dropIfExists('user_default_models');
+        Schema::table('user_default_imports', function (Blueprint $table) {
+            $table->dropColumn('sync_hash');
+        });
+
+        Schema::table('farm_crops', function (Blueprint $table) {
+            $table->dropColumn('sync_hash');
+        });
+
+        Schema::table('farm_plant_protections', function (Blueprint $table) {
+            $table->dropColumn('sync_hash');
+        });
     }
 };

@@ -21,6 +21,7 @@ class FarmFertilizersTable
             ->columns([
                 TextColumn::make('contents')->searchable()->sortable()->label('Darbavielu saturs'),
                 TextColumn::make('name')->searchable()->sortable()->label('Nosaukums'),
+                TextColumn::make('company')->searchable()->sortable()->label('Uzņēmums / Īpašnieks'),
                 TextColumn::make('cost_per_unit')->sortable()->formatStateUsing(fn(FarmFertilizer $record) => $record->costsText)->label('Izmaksas'),
             ])
             ->filters([

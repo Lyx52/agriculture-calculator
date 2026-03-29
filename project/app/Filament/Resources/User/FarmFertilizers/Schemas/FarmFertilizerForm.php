@@ -51,6 +51,8 @@ class FarmFertilizerForm
                     ->required(),
                 TextInput::make('name')
                     ->label('Nosaukums'),
+                TextInput::make('company')
+                    ->label('Uzņēmums / Īpašnieks'),
                 Fieldset::make()
                     ->schema([
                         TextInput::make('cost_per_unit')
