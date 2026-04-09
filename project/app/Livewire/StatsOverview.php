@@ -2,30 +2,31 @@
 
 namespace App\Livewire;
 
-use Filament\Widgets\StatsOverviewWidget;
+use Filament\Actions\Action;
+use Filament\Forms\Components\TextInput;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 
-class StatsOverview extends StatsOverviewWidget
+class StatsOverview extends ConfigurableWidget
 {
-    protected function getStats(): array
+    public function configureActionUsing(Action $action)
+    {
+        return $action->schema([
+            TextInput::make('views')
+        ]);
+    }
+
+    public static function getDefaultConfiguration(): array
     {
         return [
-            Stat::make('Unique views', '192.1k')
-                ->description('32k increase')
-                ->descriptionIcon('heroicon-m-arrow-trending-up'),
-            Stat::make('Bounce rate', '21%')
-                ->description('7% decrease')
-                ->descriptionIcon('heroicon-m-arrow-trending-down'),
-            Stat::make('Average time on page', '3:12')
-                ->description('3% increase')
-                ->descriptionIcon('heroicon-m-arrow-trending-up'),
+            'views' => ''
+        ];
+    }
 
-            Stat::make('Unique views', '192.1k')
-                ->columnSpanFull()
-                ->description('32k increase')
-                ->descriptionIcon('heroicon-m-arrow-trending-up')
-                ->chart([7, 2, 10, 3, 15, 4, 17])
-                ->color('success'),
+    public function getContent(): array
+    {
+        return [
+            Stat::make('Unique views', fn() => $this->getConfig('views'))
+                ->descriptionIcon('heroicon-m-arrow-trending-up'),
         ];
     }
 }

@@ -2,7 +2,9 @@
 
 namespace App\Filament\Pages\User;
 
+use App\Livewire\ConfigurableWidget;
 use App\Livewire\LatestFarmlandOperations;
+use App\Livewire\StatsOverview;
 use Asosick\FilamentLayoutManager\Pages\LayoutManagerPage;
 use BackedEnum;
 use Filament\Support\Icons\Heroicon;
@@ -17,11 +19,12 @@ class HomeDashboard extends LayoutManagerPage
     {
         return [
             LatestFarmlandOperations::class,
+            StatsOverview::class
         ];
     }
 
     protected function getComponentSelectOptions(): array
     {
-        return ['My Company Widget'];
+        return ['My Company Widget', 'test'];
     }
 }
