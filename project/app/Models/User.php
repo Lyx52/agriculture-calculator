@@ -50,6 +50,7 @@ class User extends Authenticatable implements FilamentUser
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
             'is_admin' => 'boolean',
+            'dashboard_layout' => 'array'
         ];
     }
 
@@ -99,5 +100,9 @@ class User extends Authenticatable implements FilamentUser
     public function otherMaterials(): HasMany
     {
         return $this->hasMany(FarmOtherMaterial::class, 'owner_id', 'id');
+    }
+
+    public function dashboardLayouts():  HasMany {
+        return $this->hasMany(UserDashboardLayout::class);
     }
 }

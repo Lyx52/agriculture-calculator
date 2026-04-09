@@ -2,7 +2,7 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\Pages\User\Frontpage;
+use App\Filament\Pages\User\HomeDashboard;
 use App\Providers\Filament\Traits\DefaultPanel;
 use Filament\Panel;
 use Filament\PanelProvider;
@@ -22,7 +22,7 @@ class UserPanelProvider extends PanelProvider
             ->discoverResources(in: app_path('Filament/Resources/User'), for: 'App\Filament\Resources\User')
             ->discoverPages(in: app_path('Filament/Pages/User'), for: 'App\Filament\Pages\User')
             ->pages([
-                Frontpage::class,
+                HomeDashboard::class,
             ]);
     }
 }
