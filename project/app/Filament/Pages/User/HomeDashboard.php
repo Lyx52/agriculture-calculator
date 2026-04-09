@@ -2,7 +2,7 @@
 
 namespace App\Filament\Pages\User;
 
-use App\Livewire\ConfigurableWidget;
+use App\Livewire\CostsOverviewWidget;
 use App\Livewire\LatestFarmlandOperations;
 use App\Livewire\StatsOverview;
 use Asosick\FilamentLayoutManager\Pages\LayoutManagerPage;
@@ -19,12 +19,13 @@ class HomeDashboard extends LayoutManagerPage
     {
         return [
             LatestFarmlandOperations::class,
-            StatsOverview::class
+            StatsOverview::class,
+            CostsOverviewWidget::class
         ];
     }
 
     protected function getComponentSelectOptions(): array
     {
-        return ['My Company Widget', 'test'];
+        return ['My Company Widget', 'test', 'charts'];
     }
 }

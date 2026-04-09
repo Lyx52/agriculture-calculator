@@ -2,7 +2,7 @@
     <x-filament::section>
         <div class="flex justify-end">
             @if($editMode)
-            {{ $this->configure() }}
+            {{ $this->configureAction() }}
                 @endif
         </div>
         {{ $this->content }}

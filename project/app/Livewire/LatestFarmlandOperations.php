@@ -8,6 +8,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 
 class LatestFarmlandOperations extends TableWidget
 {
@@ -20,6 +21,10 @@ class LatestFarmlandOperations extends TableWidget
             ->columns([
                 TextColumn::make('operation_date')->formatStateUsing(fn(Carbon $state) => $state->formatted())->label('Datums'),
                 TextColumn::make('operation.name')->label('Apstrādes operācija'),
+                TextColumn::make('materialCosts')
+                    ->getStateUsing(function(FarmlandOperation $record) {
+                        return $record->materials->sum('costs');
+                    })
             ]);
     }
 }

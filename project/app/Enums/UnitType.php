@@ -1,5 +1,6 @@
 <?php
 namespace App\Enums;
+use Exception;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Contracts\Support\Htmlable;
 
@@ -14,6 +15,20 @@ enum UnitType: string implements HasLabel {
             self::LITERS => "l",
             self::KILOGRAMS => "kg",
             self::GRAMS => 'g',
+        };
+    }
+
+    public function convertTo(float|int $value, UnitType $convertedTo): float {
+        return match ($this) {
+            self::GRAMS => match($convertedTo) {
+                self::GRAMS => $value,
+                self::KILOGRAMS => $value / 1000
+            },
+            self::KILOGRAMS => match($convertedTo) {
+                self::GRAMS => $value * 1000,
+                self::KILOGRAMS => $value
+            },
+            default => $value
         };
     }
 

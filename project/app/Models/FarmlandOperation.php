@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -43,5 +44,9 @@ class FarmlandOperation extends Model
 
     public function farm(): HasOneThrough {
         return $this->hasOneThrough(Farm::class, Farmland::class, 'id', 'id', 'farmland_id', 'farm_id');
+    }
+
+    public function farmlandArea(): Attribute {
+        return Attribute::get(fn() => $this->farmland->area)->shouldCache();
     }
 }

@@ -34,4 +34,17 @@ enum MaterialAmountType: string implements HasLabel {
             self::LITERS_PER_HECTARE->value => self::LITERS_PER_HECTARE->getLabel(),
         ];
     }
+
+    public function unitType(): UnitType {
+        return match ($this) {
+            self::LITERS_PER_HECTARE, self::LITERS_TOTAL => UnitType::LITERS,
+            self::KILOGRAMS_PER_HECTARE, self::KILOGRAMS_TOTAL => UnitType::KILOGRAMS,
+            self::GRAMS_PER_HECTARE, self::GRAMS_TOTAL => UnitType::GRAMS,
+        };
+    }
+
+    public function isPerHectare(): bool {
+        return in_array($this, [self::LITERS_PER_HECTARE, self::KILOGRAMS_PER_HECTARE, self::GRAMS_PER_HECTARE]);
+    }
+
 }
